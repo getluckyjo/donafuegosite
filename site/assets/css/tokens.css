@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Doña Fuego — design tokens
+   Copied from the Brand Kit (Drive: Doña Fuego Shoot Selects / Brand Kit /
+   design-tokens.css). Same values as the investor site and the dashboard.
+   If the palette changes, it changes in all three repositories.
+   ========================================================================== */
+
+@font-face { font-family: 'Bevan'; font-style: normal; font-weight: 400; font-display: swap; src: url(/assets/fonts/Bevan-400.woff2) format('woff2'); }
+@font-face { font-family: 'Oswald'; font-style: normal; font-weight: 400 600; font-display: swap; src: url(/assets/fonts/Oswald-400.woff2) format('woff2'); }
+@font-face { font-family: 'Work Sans'; font-style: normal; font-weight: 400 600; font-display: swap; src: url(/assets/fonts/WorkSans-400.woff2) format('woff2'); }
+@font-face { font-family: 'Work Sans'; font-style: italic; font-weight: 400; font-display: swap; src: url(/assets/fonts/WorkSans-400-italic.woff2) format('woff2'); }
+
+:root {
+  /* ---- Grounds ---- */
+  --cream:        #F3ECDC;   /* default background. The brand's "white" */
+  --cream-deep:   #EAE0CB;   /* alternating band */
+  --paper:        #FAF6EC;   /* panels sitting on cream */
+  --white:        #FFFFFF;   /* cards only, never a full page */
+
+  /* ---- Greens ---- */
+  --forest:       #14522A;   /* display headings, the can's lettering green */
+  --forest-deep:  #0B3D1E;   /* hover / deepest shade */
+  --leaf:         #4C8A2E;   /* the wordmark green */
+  --lime:         #A8C13F;   /* accent on dark grounds only */
+
+  /* ---- Warms ---- */
+  --coral:        #D6746A;   /* Paloma */
+  --coral-deep:   #C95F52;   /* Paloma, text-safe on cream */
+  --chilli:       #A00000;   /* Spicy Margarita. Eyebrows and one hero word */
+
+  /* ---- Ink ---- */
+  --ink:          #2C2A21;   /* body text. Warm near-black, never #000 */
+  --ink-soft:     #5A574A;   /* secondary text, captions */
+  --line:         #D9CEB6;   /* hairlines and borders */
+
+  /* ---- Type stacks ---- */
+  --font-display: 'Bevan', Georgia, serif;                 /* headlines. ALWAYS uppercase */
+  --font-caps:    'Oswald', 'Arial Narrow', sans-serif;    /* eyebrows, labels, buttons, numbers */
+  --font-body:    'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+
+  /* ---- Layout ---- */
+  --maxw: 1180px;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(44, 42, 33, .10);
+  --border: 2px solid var(--forest);   /* the brand's signature hard outline */
+}

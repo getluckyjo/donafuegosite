@@ -1,0 +1,8 @@
+{
+  "name": "Doña Fuego Tequila",
+  "short_name": "Doña Fuego",
+  "icons": [{ "src": "/assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" }],
+  "theme_color": "#F3ECDC",
+  "background_color": "#F3ECDC",
+  "display": "browser"
+}
