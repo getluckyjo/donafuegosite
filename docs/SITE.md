@@ -1,6 +1,6 @@
 # donafuego.co.za — plan, page map and what is still needed
 
-Last updated 14 October 2026. This is the working document for the consumer site.
+Last updated 15 October 2026. This is the working document for the consumer site.
 `CLAUDE.md` has the rules; this file has the state.
 
 ## Why
@@ -24,15 +24,76 @@ this be any other drink, would Sunny screenshot it, does it look like a friend m
   plan is to keep the shop on shop.fuegotequila.co.za.
 - Stack: static HTML/CSS/JS on Vercel, same conventions as the other two repositories.
 
+## The idea: a sitcom about one Saturday
+
+Johannes asked for a friends page, not a brand page: the How I Met Your Mother intro,
+less brand, more real, a bit retro, built only from the shoot. So the home page is
+Season 1, Episode 1, "The Braai":
+
+1. **Cold open.** Disposable prints drop onto a pile, fast, then the title card slams on.
+   Silent. Plays once per browser session; Skip and "watch the intro again" are there.
+2. **Starring.** Twelve cast cards, each a print, a first name and one line. Then
+   "Created by" Danielle, which replaces the old story page.
+3. **Five scenes.** Arrivals, The fire, The pool, Sunset, After dark. Prints scattered
+   like they came back from the chemist, each with its camera credit.
+4. **What was in the cooler box.** The only product moment: the three cans, cropped
+   from Bernard's clean-can lineup, and the Non-Alc, which wasn't at this braai.
+5. **Episode 2 stars you.** The fan wall.
+6. **End credits.** The footer rolls like credits.
+
+Retro comes from treatment, not new colours: white-bordered prints, orange film date
+stamps, film grain, Bevan title cards with a chilli offset shadow.
+
+## The fan wall: how Danielle runs it
+
+1. Someone tags @drink_fuego_tequila or uses #DonaFuego.
+2. If it's a good one, DM them: ask if Doña Fuego can put it on the website, credited.
+3. Before saving, check it against `07-compliance.md`: everyone clearly over 18 and
+   reading 25+ if there's a can, nobody looks drunk, no cars or driving, no other alcohol
+   brands, no phone in their hand if it can be avoided.
+4. Save the photo into the **Fan Wall** folder on Drive. Put their @handle in the file's
+   description (right-click, File information, Description), or name the file
+   `@handle.jpg`.
+5. It shows on the site within ten minutes, newest first. To take one down, delete it from
+   the folder. It drops off the wall within ten minutes.
+
+Setup, once: create a Google Cloud service account with no roles, make a key, share the
+Fan Wall folder with its email as Viewer, and set `GOOGLE_SA_EMAIL`, `GOOGLE_SA_PRIVATE_KEY`
+and `FAN_FOLDER_ID` on Vercel. The dashboard's `docs/DASHBOARD.md` has the same
+walkthrough for its own service account.
+
+## Cast consent
+
+Each cast card says `[First name TBC]`. For each one, find out who it is, ask them, and
+put the first name in `site/index.html` (search for `data-cast="<id>"`).
+
+| Card | Frame | Name | Said yes |
+|---|---|---|---|
+| flag-face | 39_334293_000031 | | |
+| beaming-flag | 17_334293_000042 | | |
+| kodak-cheers | 57_314295_000038 | | |
+| bunting-laugh | 13_CHAR_028 | | |
+| kebab | 26_CHAR_235 | | |
+| corn-shut | 52_CHAR_223 | | |
+| mustard-polo | 53_334292_000040 | | |
+| face-can | 22_CHAR_056 | | |
+| corn-sunburst | 03_314295_000008 | | |
+| couple-cheers (two people) | 30_CHAR_109 | | |
+| fan-eyes | 19_314295_000027 | | |
+| laugh-glass | 44_CHAR_042 | | |
+
+Camera credits name Bernard, Anda and Shaun as photographers, as the Brand Kit asks.
+Confirm they're happy with that too.
+
 ## Page map
 
 | URL | File | Status |
 |---|---|---|
-| `/` | `site/index.html` | drafted |
+| `/` | `site/index.html` | the episode: cold open, cast, scenes, cooler box, fan wall |
 | `/cans` | `site/cans.html` | drafted |
 | `/cans/margarita` `/cans/spicy-margarita` `/cans/paloma` `/cans/non-alc-margarita` | `site/cans/*.html` | drafted; Non-Alc specs TBC |
 | `/find-us` | `site/find-us.html` | drafted; price TBC, store list to come |
-| `/story` | `site/story.html` | drafted |
+| `/story` | redirect to `/#created-by` | done |
 | `/serves` | `site/serves.html` | drafted |
 | `/tequila` | `site/tequila.html` | drafted; bottle specs and prices TBC |
 | `/contact` | `site/contact.html` | drafted; addresses TBC |
@@ -40,6 +101,7 @@ this be any other drink, would Sunny screenshot it, does it look like a friend m
 | `/404` | `site/404.html` | done |
 | `/shop` | redirect in `vercel.json` to the Shopify collection | done |
 | `/api/subscribe` | `api/subscribe.js` | works in stub mode; needs Resend env |
+| `/api/fans`, `/api/fan-image` | `api/fans.js`, `api/fan-image.js` | empty until the fan-wall env is set |
 
 ## Brand, in one paragraph
 
@@ -57,33 +119,31 @@ Each has a placeholder in the build, so nothing blocks review of the draft.
 
 1. **Logo.** Only a red PNG exists (Shopify). Need the vector wordmark or the can-label
    lettering as SVG. The site uses a typed Bevan wordmark until then.
-2. **Non-Alc Margarita can render.** Never delivered. Shown as a dashed silhouette.
-3. **Hero film.** "Opening film v3 (heroes)" is 1080×1350 portrait, no sound. Need a 16:9
-   cut for desktop (H.264, under 4MB), or approval to use a still on desktop. Recommend
-   no sound; muted autoplay only. Markup is in `index.html`, commented out.
-4. **Web selects.** 12 to 15 A-HERO frames and 4 TRADE clean cans, per
-   `site/assets/img/README.md`. Compliance check on every one. Claude can pull and convert
-   from Drive once told which.
-5. **Facts to confirm with Danielle.** Store count for public use; 4-pack and single price;
+2. **Non-Alc Margarita photo.** It wasn't at the shoot. Shown as a blank print.
+3. **Cast names and consent.** See the table above.
+4. **Fan wall setup.** Service account, Fan Wall folder, three env vars. See above.
+5. **Held-back frames.** Eight frames are out pending an age or background check; the list
+   is in `tools/shoot-manifest.json`. Clear them with Danielle to use them.
+6. **Facts to confirm with Danielle.** Store count for public use; 4-pack and single price;
    can size (Brand Kit 250ml, Shopify listing says 300ml); Sixty60 availability; Non-Alc
    ABV and on-pack class; launch wording. Every one is marked `tbc` in the pages.
-6. **Bottle specs.** ABV, size, tasting notes and current prices for Blanco, Jalapeño and
+7. **Bottle specs.** ABV, size, tasting notes and current prices for Blanco, Jalapeño and
    Reposado. Fix the "reposade" product URL in Shopify and add a redirect.
-7. **Contact details.** hello@ and press@ on donafuego.co.za (or whichever addresses are
+8. **Contact details.** hello@ and press@ on donafuego.co.za (or whichever addresses are
    real), phone, street address for the footer and the Organization schema.
-8. **Social.** Keep @drink_fuego_tequila or move to a Doña Fuego handle. TikTok yes or no.
-9. **Company and legal.** Registered entity and number for the footer; attorney review of
+9. **Social.** Keep @drink_fuego_tequila or move to a Doña Fuego handle. TikTok yes or no.
+10. **Company and legal.** Registered entity and number for the footer; attorney review of
    `legal/terms` and `legal/privacy`; information officer's name; confirm the ARA
    responsible-drinking wording.
-10. **Domain and hosting.** Register donafuego.co.za, create the Vercel project from this
+11. **Domain and hosting.** Register donafuego.co.za, create the Vercel project from this
     repo, set DNS. Plan the fuegotequila.co.za redirect and the shop subdomain.
-11. **Email.** Resend API key, an audience ID and a verified sending domain. Then the
+12. **Email.** Resend API key, an audience ID and a verified sending domain. Then the
     welcome email.
-12. **Checkers and Sixty60 marks.** Permission to show their logos (a Checkers logo folder
+13. **Checkers and Sixty60 marks.** Permission to show their logos (a Checkers logo folder
     exists in Drive) and the correct store-locator and Sixty60 links.
-13. **Analytics.** Recommend Vercel Web Analytics or Plausible (no cookies, no banner).
+14. **Analytics.** Recommend Vercel Web Analytics or Plausible (no cookies, no banner).
     Name it in the privacy page when added.
-14. **Final copy.** Drafts are in brand voice. Clarissa or Danielle sign off before launch.
+15. **Final copy.** Drafts are in brand voice. Clarissa or Danielle sign off before launch.
 
 ## Later, once the above is in
 

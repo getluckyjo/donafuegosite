@@ -28,8 +28,16 @@ beyond what Danielle has confirmed for the public.
   match the other two repositories. Change the palette in all three.
 - **Bump `?v=`** in `site/_partials/head.html` (CSS) and `footer.html` (JS) on any CSS/JS
   change, then sync. Assets are cached for a year.
-- **Images**: guest-camera photography only, never studio product. `site/assets/img/README.md`
-  says which placeholders still need replacing and with what.
+- **Images**: shoot frames and approved fan photos only. No renders, no stock, no AI.
+  Frames live in `site/assets/shoot/`, built from `tools/shoot-manifest.json` by
+  `tools/build-images.py`; `site/assets/shoot/README.md` says how. The checker fails on
+  anything else.
+- **The idea**: the home page is a sitcom about one Saturday. Cold open (prints dropping on a
+  pile), the cast, five scenes, the cooler box, then the fan wall as Episode 2. Keep new
+  content inside that frame rather than adding brand-site sections.
+- **Cast names** stay `[First name TBC]` until that guest has said yes. Never guess a name.
+- **Fan wall** shows only what Danielle has put in the Drive Fan Wall folder. Nothing is
+  pulled from Instagram automatically, and nothing goes up without the fan's permission.
 
 ## Run and check
     node tools/dev-server.js        # http://localhost:4321
@@ -39,3 +47,6 @@ beyond what Danielle has confirmed for the public.
 Fast-forward `main`. Vercel project to be created from this repo; domain donafuego.co.za.
 Env for the forms: `RESEND_API_KEY`, `RESEND_AUDIENCE_ID`, `CONTACT_TO`, `CONTACT_FROM`.
 Without them the forms answer politely and log to the function output.
+Env for the fan wall: `GOOGLE_SA_EMAIL`, `GOOGLE_SA_PRIVATE_KEY`, `FAN_FOLDER_ID`. Without
+them the wall shows its "this could be you" card. `FANS=demo node tools/dev-server.js`
+fills it with stand-in frames locally.

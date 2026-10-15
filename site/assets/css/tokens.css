@@ -43,4 +43,8 @@
   --radius: 14px;
   --shadow: 0 10px 30px rgba(44, 42, 33, .10);
   --border: 2px solid var(--forest);   /* the brand's signature hard outline */
+
+  /* ---- Film ---- */
+  --datestamp:    #FF8A1E;   /* the orange date stamp on disposable prints. Photos only */
+  --print:        #FBF8F1;   /* the white border of a print */
 }

@@ -13,7 +13,7 @@
   if (gate) {
     var yes = gate.querySelector('[data-age="yes"]');
     var no = gate.querySelector('[data-age="no"]');
-    if (yes) yes.addEventListener('click', function () { remember(); html.classList.add('age-ok'); });
+    if (yes) yes.addEventListener('click', function () { remember(); html.classList.add('age-ok'); document.dispatchEvent(new Event('df:age-ok')); });
     if (no) no.addEventListener('click', function () { window.location.href = 'https://aware.org.za/'; });
     if (!html.classList.contains('age-ok') && yes) yes.focus();
   }
@@ -33,6 +33,7 @@
   var here = location.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
   document.querySelectorAll('.site-nav a:not(.btn)').forEach(function (a) {
     var to = a.getAttribute('href').replace(/\/$/, '') || '/';
+    if (to.indexOf('#') !== -1) return;
     if (to === here || (to !== '/' && here.indexOf(to + '/') === 0)) a.setAttribute('aria-current', 'page');
   });
 
@@ -86,4 +87,68 @@
         .then(function () { if (btn) btn.disabled = false; });
     });
   });
+  /* ---- Cold open: prints drop onto a pile, then the title card ----
+     Plays once per browser session. Reduced motion, a repeat visit or Skip
+     go straight to the finished pile and the title. */
+  var open = document.querySelector('.cold-open');
+  if (open) {
+    var prints = Array.prototype.slice.call(open.querySelectorAll('.pile .print'));
+    var timers = [];
+    var SEEN = 'df_intro_seen';
+    var finish = function () {
+      timers.forEach(clearTimeout); timers = [];
+      prints.forEach(function (p) { p.classList.add('down'); });
+      open.classList.add('titled');
+      try { sessionStorage.setItem(SEEN, '1'); } catch (e) {}
+    };
+    var ready = function (p) {
+      var img = p.querySelector('img');
+      if (!img || img.complete) return Promise.resolve();
+      return (img.decode ? img.decode() : Promise.resolve()).catch(function () {});
+    };
+    var play = function () {
+      timers.forEach(clearTimeout); timers = [];
+      open.classList.remove('titled');
+      prints.forEach(function (p) { p.classList.remove('down'); });
+      var i = 0, last = prints.length;
+      var step = function () {
+        if (i >= last) { timers.push(setTimeout(finish, 450)); return; }
+        var p = prints[i++];
+        // the last three slow down, like the end of a title sequence
+        var wait = i > last - 3 ? 380 + (i - (last - 3)) * 140 : 210;
+        ready(p).then(function () { p.classList.add('down'); timers.push(setTimeout(step, wait)); });
+      };
+      step();
+    };
+    var skip = open.querySelector('.skip-intro');
+    if (skip) skip.addEventListener('click', finish);
+    document.querySelectorAll('[data-replay]').forEach(function (b) {
+      b.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); play(); });
+    });
+    var seen = false;
+    try { seen = sessionStorage.getItem(SEEN) === '1'; } catch (e) {}
+    if (reduce || seen) finish();
+    else if (html.classList.contains('age-ok')) play();
+    else document.addEventListener('df:age-ok', play, { once: true });
+  }
+
+  /* ---- Fan wall: approved photos from the Drive folder ---- */
+  var wall = document.querySelector('[data-fans]');
+  if (wall && window.fetch) {
+    fetch('/api/fans').then(function (r) { return r.ok ? r.json() : { fans: [] }; }).then(function (d) {
+      var invite = wall.querySelector('.print.empty');
+      (d.fans || []).forEach(function (f, n) {
+        var fig = document.createElement('figure');
+        fig.className = 'print small';
+        fig.style.setProperty('--r', ((n * 37) % 7 - 3) + 'deg');
+        var img = document.createElement('img');
+        img.src = f.src; img.alt = 'Photo by ' + f.credit; img.loading = 'lazy'; img.decoding = 'async';
+        if (f.w && f.h) { img.width = f.w; img.height = f.h; }
+        var cap = document.createElement('figcaption');
+        var c = document.createElement('span'); c.className = 'cap'; c.textContent = f.credit;
+        cap.appendChild(c); fig.appendChild(img); fig.appendChild(cap);
+        wall.insertBefore(fig, invite);
+      });
+    }).catch(function () {});
+  }
 })();
