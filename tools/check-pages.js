@@ -31,6 +31,11 @@ for (const file of all) {
   const html = fs.readFileSync(file, 'utf8');
 
   // Partials present and identical to the source of truth
+  // Optional blocks (retail) must match too, wherever a page carries them
+  for (const name of Object.keys(parts).filter((n) => !REQUIRED_PARTIALS.includes(n))) {
+    const m = html.match(new RegExp(`<!-- partial:${name} -->([\\s\\S]*?)<!-- /partial:${name} -->`));
+    if (m && m[1].trim() !== parts[name].trim()) err(f, `partial "${name}" differs from _partials/${name}.html (run node tools/sync-partials.js)`);
+  }
   for (const name of REQUIRED_PARTIALS) {
     const re = new RegExp(`<!-- partial:${name} -->([\\s\\S]*?)<!-- /partial:${name} -->`);
     const m = html.match(re);
@@ -58,7 +63,7 @@ for (const file of all) {
     if (!/alt="/.test(m[0])) err(f, `img without alt: ${m[0].slice(0, 80)}`);
     // Shoot frames and approved fan photos only: no renders, no stock, no AI.
     const src = (m[0].match(/\ssrc="([^"]*)"/) || [])[1] || '';
-    if (!/^\/(assets\/(shoot|products)\/|api\/fan-image)/.test(src)) err(f, `image outside the shoot set and packshots: ${src}`);
+    if (!/^\/(assets\/(shoot|products|logos)\/|api\/fan-image)/.test(src)) err(f, `image outside the shoot set, packshots and retailer logos: ${src}`);
   }
   for (const m of live.matchAll(/\/assets\/img\/([\w.-]+)/g)) {
     if (!['favicon.svg', 'og.jpg'].includes(m[1])) err(f, `reference to a removed image: /assets/img/${m[1]}`);

@@ -175,9 +175,11 @@ Each has a placeholder in the build, so nothing blocks review of the draft.
     repo, set DNS. Plan the fuegotequila.co.za redirect and the shop subdomain.
 12. **Email.** Resend API key, an audience ID and a verified sending domain. Then the
     welcome email.
-13. **Checkers and Sixty60 marks.** Permission to show their logos (a Checkers logo folder
-    exists in Drive). Check the links in `tools/shop.json` against the ones Danielle
-    emailed, and add the Non-Alc once Checkers lists it.
+13. **Checkers and Sixty60 marks.** The LiquorShop and Sixty60 logos are on the
+    "Available nationwide" band (`site/_partials/retail.html`: home and `/cans`). Confirm
+    with the Checkers buyer that brand use is fine under the trading terms. Check the links
+    in `tools/shop.json` against the ones Danielle emailed, and add the Non-Alc once
+    Checkers lists it.
 14. **Analytics.** Recommend Vercel Web Analytics or Plausible (no cookies, no banner).
     Name it in the privacy page when added.
 15. **Final copy.** Drafts are in brand voice. Clarissa or Danielle sign off before launch.

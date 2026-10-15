@@ -33,7 +33,9 @@ beyond what Danielle has confirmed for the public.
   rendered scenes. Frames live in `site/assets/shoot/`, built from
   `tools/shoot-manifest.json` by `tools/build-images.py`; `site/assets/shoot/README.md`
   says how. Packshots live in `site/assets/products/`, cut from Labels/Renders by
-  `tools/build-products.py`. The checker fails on anything else.
+  `tools/build-products.py`. Retailer logos (Checkers LiquorShop, Checkers Sixty60) live in
+  `site/assets/logos/`, used as supplied, on white, only in the `retail` partial. The
+  checker fails on anything else.
 - **The idea**: the home page is a sitcom about one Saturday. Cold open (prints dropping on a
   pile), the cast, five scenes, the cooler box, then the fan wall as Episode 2. Keep new
   content inside that frame rather than adding brand-site sections.

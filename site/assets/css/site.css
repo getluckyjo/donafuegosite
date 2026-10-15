@@ -507,3 +507,17 @@ body::after {
 .can-slot > a.can-card { display: flex; flex: 1; }
 .buy-mini { white-space: nowrap; }
 @media (max-width: 900px) { .cooler-row .buy-verb { display: none; } .cooler-row .buy-mini { padding-left: 14px; padding-right: 14px; } }
+
+/* ---------- Retail band: where the cans are sold ---------- */
+.retail { background: var(--print); border-top: 2px solid var(--forest); border-bottom: 2px solid var(--forest); padding: 64px 0; }
+.retail .wrap { display: grid; grid-template-columns: 1fr 1.35fr; gap: 48px; align-items: center; }
+.retail-copy h2 { font-family: var(--font-display); text-transform: uppercase; color: var(--forest); font-size: clamp(2rem, 4vw, 3rem); line-height: 1; margin: 0 0 14px; text-shadow: 2px 2px 0 var(--chilli); }
+.retail-copy p { color: var(--ink-soft); max-width: 34ch; margin: 0; }
+.retail-logos { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.retail-tile { background: #fff; border: var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 30px 26px 20px; display: flex; flex-direction: column; align-items: center; gap: 18px; text-decoration: none; transition: transform .15s ease; }
+.retail-tile:hover, .retail-tile:focus-visible { transform: translateY(-4px); }
+.retail-tile img { height: 64px; width: auto; max-width: 100%; object-fit: contain; }
+.retail-tile span { font-family: var(--font-caps); font-weight: 600; font-size: .78rem; letter-spacing: .2em; text-transform: uppercase; color: var(--forest); }
+@media (max-width: 900px) { .retail .wrap { grid-template-columns: 1fr; gap: 28px; text-align: center; } .retail-copy p { margin: 0 auto; } }
+@media (max-width: 520px) { .retail { padding: 48px 0; } .retail-logos { gap: 12px; } .retail-tile { padding: 22px 14px 16px; } .retail-tile img { height: 44px; } .retail-tile span { font-size: .7rem; letter-spacing: .14em; } }
+@media (prefers-reduced-motion: reduce) { .retail-tile { transition: none; } }
