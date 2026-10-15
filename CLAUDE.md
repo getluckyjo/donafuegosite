@@ -52,5 +52,6 @@ Fast-forward `main`. Vercel project to be created from this repo; domain donafue
 Env for the forms: `RESEND_API_KEY`, `RESEND_AUDIENCE_ID`, `CONTACT_TO`, `CONTACT_FROM`.
 Without them the forms answer politely and log to the function output.
 Env for the fan wall: `GOOGLE_SA_EMAIL`, `GOOGLE_SA_PRIVATE_KEY`, `FAN_FOLDER_ID`. Without
-them the wall shows its "this could be you" card. `FANS=demo node tools/dev-server.js`
+them the wall shows its five invite cards ("This could be you", your friend, your crush,
+your mom, your dog); each real fan photo replaces one, and "This could be you" stays. `FANS=demo node tools/dev-server.js`
 fills it with stand-in frames locally.

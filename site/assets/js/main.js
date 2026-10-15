@@ -149,6 +149,9 @@
         cap.appendChild(c); fig.appendChild(img); fig.appendChild(cap);
         wall.insertBefore(fig, invite);
       });
+      // One joke card makes way for each real fan; "This could be you" always stays
+      var jokes = wall.querySelectorAll('.print.empty');
+      for (var i = jokes.length - 1; i > 0 && i > jokes.length - 1 - (d.fans || []).length; i--) jokes[i].remove();
     }).catch(function () {});
   }
 })();

@@ -536,3 +536,14 @@ body::after {
 @media (max-width: 760px) { .store-row { grid-template-columns: 1fr; max-width: 360px; } }
 @media (prefers-reduced-motion: reduce) { .store-card { transition: none; } }
 .band-forest .store-card, .band-forest .store-card:hover, .store-card strong { color: var(--forest); }
+
+/* Fan wall invites: a few colours so the row does not look stamped out */
+.fan-wall .print.empty.chilli .blank { border-color: var(--chilli); color: var(--chilli); }
+.fan-wall .print.empty.coral .blank { border-color: var(--coral-deep); color: var(--coral-deep); }
+.fan-wall .print.empty.leaf .blank { border-color: var(--leaf); color: var(--leaf); }
+.fan-wall .print.empty .blank span { padding: 0 10px; }
+@media (min-width: 1000px) { .fan-wall { grid-template-columns: repeat(5, 1fr); } }
+@media (max-width: 760px) { .fan-wall > .print:last-child:nth-child(odd) { grid-column: 1 / -1; width: calc(50% - 7px); justify-self: center; } }
+.fan-wall .print.empty .blank strong { font-size: clamp(1rem, 1.35vw, 1.15rem); line-height: 1.15; margin-bottom: 8px; }
+.fan-wall .print.empty .blank { font-size: .76rem; line-height: 1.35; }
+@media (max-width: 760px) { .fan-wall .print.empty .blank { font-size: .66rem; letter-spacing: .08em; } .fan-wall .print.empty .blank strong { font-size: .98rem; letter-spacing: 0; } .fan-wall .print.empty .blank span { padding: 0 6px; } }
