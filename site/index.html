@@ -9,8 +9,8 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/Bevan-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/Oswald-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/tokens.css?v=4">
-<link rel="stylesheet" href="/assets/css/site.css?v=4">
+<link rel="stylesheet" href="/assets/css/tokens.css?v=5">
+<link rel="stylesheet" href="/assets/css/site.css?v=5">
 <script>document.documentElement.classList.add('no-js');try{if(localStorage.getItem('df_age_ok')==='1')document.documentElement.classList.add('age-ok')}catch(e){}</script>
 <!-- /partial:head -->
 <title>Doña Fuego — a Saturday in Fresnaye</title>
@@ -61,7 +61,8 @@
       <a href="/cans">The cans</a>
       <a href="/serves">Serves</a>
       <a href="/#tag-us">Tag us</a>
-      <a class="btn btn-solid btn-small" href="/find-us">Find it at Checkers</a>
+      <a href="/find-us">Find it</a>
+      <a class="btn btn-solid btn-small" data-shop="search" href="https://www.checkers.co.za/search?Search=dona+fuego&amp;brand=Fuego+Tequila&amp;utm_source=donafuego&amp;utm_medium=referral&amp;utm_campaign=brand-site" target="_blank" rel="noopener">Order on Sixty60</a>
     </nav>
   </div>
 </header>
@@ -103,7 +104,7 @@
     <p class="tag">— a Saturday in Fresnaye —</p>
     <div class="btn-row">
       <a class="btn btn-cream" href="#cast">Meet the cast</a>
-      <a class="btn btn-ghost-cream" href="/find-us">Find it at Checkers</a>
+      <a class="btn btn-ghost-cream" data-shop="search" href="https://www.checkers.co.za/search?Search=dona+fuego&amp;brand=Fuego+Tequila&amp;utm_source=donafuego&amp;utm_medium=referral&amp;utm_campaign=brand-site" target="_blank" rel="noopener">Order on Sixty60</a>
     </div>
   </div>
   <a class="scroll-cue" href="#cast">Scroll</a>
@@ -312,26 +313,38 @@
       <p>250ml cans at 7%, made in Cape Town with tequila from Jalisco. In the fridge at Checkers.</p>
     </div>
     <div class="cooler-row">
-      <a href="/cans/margarita" class="reveal">
+      <div class="reveal can-slot">
+        <a href="/cans/margarita">
         <figure class="print small" style="--r:4deg;"><img src="/assets/shoot/can-margarita-640.webp" srcset="/assets/shoot/can-margarita-640.webp 640w, /assets/shoot/can-margarita-1280.webp 1280w" sizes="(max-width: 900px) 45vw, 260px" width="883" height="1280" alt="Margarita" loading="lazy" decoding="async"></figure>
         <p class="what"><strong>Margarita</strong><span>Tequila, lemon and lime</span></p>
-      </a>
-      <a href="/cans/spicy-margarita" class="reveal">
+        </a>
+        <!-- shop:mini:margarita --><a class="buy-mini" href="https://www.checkers.co.za/product/fuego-tequila-margarita-spirit-cooler-cans-4-x-250ml-6a47c6d245d9eb0e21424ff4?utm_source=donafuego&amp;utm_medium=referral&amp;utm_campaign=brand-site" target="_blank" rel="noopener" data-buy="margarita:4-pack">Order a 4-pack · R169.99</a><!-- /shop:mini:margarita -->
+      </div>
+      <div class="reveal can-slot">
+        <a href="/cans/spicy-margarita">
         <figure class="print small" style="--r:5deg;"><img src="/assets/shoot/can-spicy-640.webp" srcset="/assets/shoot/can-spicy-640.webp 640w, /assets/shoot/can-spicy-1280.webp 1280w" sizes="(max-width: 900px) 45vw, 260px" width="886" height="1280" alt="Spicy Margarita" loading="lazy" decoding="async"></figure>
         <p class="what"><strong>Spicy Margarita</strong><span>Jalapeño tequila, lemon and lime</span></p>
-      </a>
-      <a href="/cans/paloma" class="reveal">
+        </a>
+        <!-- shop:mini:spicy-margarita --><a class="buy-mini" href="https://www.checkers.co.za/product/fuego-tequila-spicy-margarita-spirit-cooler-cans-4-x-250ml-10969425PK1?utm_source=donafuego&amp;utm_medium=referral&amp;utm_campaign=brand-site" target="_blank" rel="noopener" data-buy="spicy-margarita:4-pack">Order a 4-pack · R169.99</a><!-- /shop:mini:spicy-margarita -->
+      </div>
+      <div class="reveal can-slot">
+        <a href="/cans/paloma">
         <figure class="print small" style="--r:1deg;"><img src="/assets/shoot/can-paloma-640.webp" srcset="/assets/shoot/can-paloma-640.webp 640w, /assets/shoot/can-paloma-1280.webp 1280w" sizes="(max-width: 900px) 45vw, 260px" width="886" height="1280" alt="Paloma" loading="lazy" decoding="async"></figure>
         <p class="what"><strong>Paloma</strong><span>Tequila, grapefruit, lemon and lime</span></p>
-      </a>
-      <a href="/cans/non-alc-margarita" class="reveal">
+        </a>
+        <!-- shop:mini:paloma --><a class="buy-mini" href="https://www.checkers.co.za/product/fuego-tequila-paloma-spirit-cooler-cans-4-x-250ml-10969426PK1?utm_source=donafuego&amp;utm_medium=referral&amp;utm_campaign=brand-site" target="_blank" rel="noopener" data-buy="paloma:4-pack">Order a 4-pack · R169.99</a><!-- /shop:mini:paloma -->
+      </div>
+      <div class="reveal can-slot">
+        <a href="/cans/non-alc-margarita">
         <figure class="print small" style="--r:-3deg;"><img src="/assets/shoot/can-nonalc-640.webp" srcset="/assets/shoot/can-nonalc-640.webp 640w, /assets/shoot/can-nonalc-1280.webp 1280w" sizes="(max-width: 900px) 45vw, 260px" width="620" height="1086" alt="Non-Alc Margarita" loading="lazy" decoding="async"></figure>
         <p class="what"><strong>Non-Alc Margarita</strong><span>Lemon and lime, no tequila</span></p>
-      </a>
+        </a>
+        <!-- shop:mini:non-alc-margarita --><span class="buy-mini off">Not on Sixty60 yet</span><!-- /shop:mini:non-alc-margarita -->
+      </div>
     </div>
     <div class="btn-row center" style="margin-top:44px;">
-      <a class="btn btn-cream" href="/find-us">Find it at Checkers</a>
-      <a class="btn btn-ghost-cream" href="/cans">About the cans</a>
+      <a class="btn btn-cream" data-shop="search" href="https://www.checkers.co.za/search?Search=dona+fuego&amp;brand=Fuego+Tequila&amp;utm_source=donafuego&amp;utm_medium=referral&amp;utm_campaign=brand-site" target="_blank" rel="noopener">Order on Sixty60</a>
+      <a class="btn btn-ghost-cream" href="/find-us">Find a store</a>
     </div>
   </div>
 </section>
@@ -383,7 +396,7 @@
     </div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=4" defer></script>
+<script src="/assets/js/main.js?v=5" defer></script>
 <!-- /partial:footer -->
 </body>
 </html>

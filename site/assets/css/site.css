@@ -463,3 +463,34 @@ body::after {
   .scene { padding: 64px 0 44px; }
   .fan-wall { grid-template-columns: 1fr 1fr; gap: 20px 14px; }
 }
+
+/* ---- Order on Sixty60 ---- */
+.buy { margin-top: 1.4rem; }
+.buy-label { display: block; font-family: var(--font-caps); font-weight: 600; font-size: .78rem; letter-spacing: .18em; text-transform: uppercase; color: var(--forest); margin-bottom: 10px; }
+.buy-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.buy-opt {
+  display: inline-flex; flex-direction: column; align-items: flex-start; min-width: 118px;
+  padding: 10px 18px 11px; border-radius: 14px; text-decoration: none;
+  background: var(--forest); color: var(--cream); border: var(--border);
+  transition: transform .12s ease, background .12s ease;
+}
+.buy-opt strong { font-family: var(--font-caps); font-weight: 600; font-size: .86rem; letter-spacing: .14em; text-transform: uppercase; }
+.buy-opt span { font-family: var(--font-display); font-size: 1.15rem; line-height: 1.2; }
+.buy-opt:hover { background: var(--forest-deep); color: var(--cream); transform: translateY(-2px); }
+.buy-opt:first-child { background: var(--chilli); border-color: var(--chilli); }
+.buy-opt:first-child:hover { background: #7E0000; border-color: #7E0000; }
+.buy-note { font-size: .82rem; color: var(--ink-soft); margin-top: 10px; max-width: 52ch; }
+.card .buy-opt { min-width: 0; padding: 8px 14px 9px; }
+.card .buy-opt span { font-size: 1rem; }
+.card .buy-label { display: none; }
+.can-slot { display: flex; flex-direction: column; gap: 12px; }
+.can-slot > a:first-child { text-decoration: none; color: inherit; display: block; }
+.buy-mini {
+  align-self: center; font-family: var(--font-caps); font-weight: 600; font-size: .78rem; letter-spacing: .14em; text-transform: uppercase;
+  text-decoration: none; padding: 9px 16px; border-radius: 999px; background: var(--chilli); color: var(--cream); border: 2px solid var(--chilli);
+}
+.buy-mini:hover { background: #7E0000; color: var(--cream); }
+.buy-mini.off { background: transparent; color: var(--ink-soft); border-color: var(--line); }
+.band-forest .buy-mini { background: var(--cream); color: var(--forest); border-color: var(--cream); }
+.band-forest .buy-mini:hover { background: var(--white); color: var(--forest); }
+.band-forest .buy-mini.off { background: transparent; color: #CBDDBF; border-color: rgba(203,221,191,.4); }

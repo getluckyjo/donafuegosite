@@ -18,8 +18,9 @@ this be any other drink, would Sunny screenshot it, does it look like a friend m
 
 ## Decisions (Johannes, 14 Oct 2026)
 
-- Brand site, no cart. Cans: "Find it at Checkers / Sixty60". Bottles: link out to the
-  existing Shopify product pages.
+- Brand site, no cart. Cans: every can page, the range, the cooler box and `/find-us`
+  link straight to that can's Checkers Sixty60 product page (4-pack, single, 24-pack).
+  Bottles: link out to the existing Shopify product pages.
 - New domain donafuego.co.za. fuegotequila.co.za keeps running Shopify until redirected;
   plan is to keep the shop on shop.fuegotequila.co.za.
 - Stack: static HTML/CSS/JS on Vercel, same conventions as the other two repositories.
@@ -102,7 +103,7 @@ is in `tools/shoot-manifest.json`.
 | `/` | `site/index.html` | the episode: cold open, cast, scenes, cooler box, fan wall |
 | `/cans` | `site/cans.html` | drafted |
 | `/cans/margarita` `/cans/spicy-margarita` `/cans/paloma` `/cans/non-alc-margarita` | `site/cans/*.html` | drafted; Non-Alc specs TBC |
-| `/find-us` | `site/find-us.html` | drafted; price TBC, store list to come |
+| `/find-us` | `site/find-us.html` | drafted; Sixty60 buy blocks live, store list to come |
 | `/story` | redirect to `/#created-by` | done |
 | `/serves` | `site/serves.html` | drafted |
 | `/tequila` | `site/tequila.html` | drafted; bottle specs and prices TBC |
@@ -112,6 +113,19 @@ is in `tools/shoot-manifest.json`.
 | `/shop` | redirect in `vercel.json` to the Shopify collection | done |
 | `/api/subscribe` | `api/subscribe.js` | works in stub mode; needs Resend env |
 | `/api/fans`, `/api/fan-image` | `api/fans.js`, `api/fan-image.js` | empty until the fan-wall env is set |
+
+## Sixty60 links
+
+`tools/shop.json` holds every Checkers link and price: the brand search, and one product
+URL per pack per can, all tagged `utm_source=donafuego&utm_medium=referral&utm_campaign=brand-site`.
+Pages carry `<!-- shop:full:SLUG -->` and `<!-- shop:mini:SLUG -->` markers and any
+`<a data-shop="search">`. To change a link or a price, edit the JSON, then:
+
+    python3 tools/apply-shop.py && node tools/sync-partials.js
+
+It also writes the `offers` into each can page's Product schema. A can with no packs
+(the Non-Alc) shows "Not on Sixty60 yet". The Margarita listing on Checkers showed out of
+stock when the links went in (15 Oct 2026).
 
 ## Brand, in one paragraph
 
@@ -134,8 +148,8 @@ Each has a placeholder in the build, so nothing blocks review of the draft.
 4. **Fan wall setup.** Service account, Fan Wall folder, three env vars. See above.
 5. **Held-back frames.** Eight frames are out pending an age or background check; the list
    is in `tools/shoot-manifest.json`. Clear them with Danielle to use them.
-6. **Facts to confirm with Danielle.** Store count for public use; 4-pack and single price;
-   can size (Brand Kit 250ml, Shopify listing says 300ml); Sixty60 availability; Non-Alc
+6. **Facts to confirm with Danielle.** Store count for public use; Sixty60 prices in `tools/shop.json`;
+   can size (Brand Kit 250ml, Shopify listing says 300ml); Non-Alc
    ABV and on-pack class; launch wording. Every one is marked `tbc` in the pages.
 7. **Bottle specs.** ABV, size, tasting notes and current prices for Blanco, Jalapeño and
    Reposado. Fix the "reposade" product URL in Shopify and add a redirect.
@@ -150,7 +164,8 @@ Each has a placeholder in the build, so nothing blocks review of the draft.
 12. **Email.** Resend API key, an audience ID and a verified sending domain. Then the
     welcome email.
 13. **Checkers and Sixty60 marks.** Permission to show their logos (a Checkers logo folder
-    exists in Drive) and the correct store-locator and Sixty60 links.
+    exists in Drive). Check the links in `tools/shop.json` against the ones Danielle
+    emailed, and add the Non-Alc once Checkers lists it.
 14. **Analytics.** Recommend Vercel Web Analytics or Plausible (no cookies, no banner).
     Name it in the privacy page when added.
 15. **Final copy.** Drafts are in brand voice. Clarissa or Danielle sign off before launch.
