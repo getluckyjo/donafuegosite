@@ -60,7 +60,7 @@ def main(raw):
         w, h = im.size
         scale = 1280 / max(w, h)
         frames.append({
-            'id': f['id'], 'src': f['src'], 'caption': f['caption'],
+            'id': f['id'], 'src': f['src'], 'caption': f['caption'], 'alt': f.get('alt', f['caption']),
             'scene': f.get('scene'), 'cast': bool(f.get('cast')),
             'shotOn': man['cameras'][f['cam']],
             'w': round(w * min(scale, 1)), 'h': round(h * min(scale, 1)),

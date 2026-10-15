@@ -3,12 +3,13 @@
   {
    "id": "hug",
    "src": "01_314291_000022_the-hug.jpg",
-   "caption": "The hug at the door",
+   "caption": "Haven't seen you since forever.",
    "scene": "arrivals",
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 865
+   "h": 865,
+   "alt": "The hug at the door"
   },
   {
    "id": "paloma-at-lens",
@@ -18,7 +19,8 @@
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 865
+   "h": 865,
+   "alt": "Paloma, straight at the lens"
   },
   {
    "id": "corn-sunburst",
@@ -28,77 +30,85 @@
    "cast": true,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 865
+   "h": 865,
+   "alt": "Corn, and the sun coming through"
   },
   {
    "id": "grin-grid",
    "src": "04_CHAR_157_grin-over-the-grid.jpg",
-   "caption": "Grinning over the grid",
+   "caption": "Who gave them the camera.",
    "scene": "fire",
    "cast": false,
    "shotOn": "Kodak Charmera, Shaun's",
    "w": 1280,
-   "h": 960
+   "h": 960,
+   "alt": "Grinning over the grid"
   },
   {
    "id": "armful",
    "src": "05_334292_000032_armful-of-cans.jpg",
-   "caption": "An armful for the table",
+   "caption": "Carrying \"just a few\".",
    "scene": null,
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 858
+   "h": 858,
+   "alt": "An armful for the table"
   },
   {
    "id": "laugh-table",
    "src": "06_334292_000030_the-laugh-across-the-table.jpg",
-   "caption": "The laugh across the table",
+   "caption": "Whatever was said, it landed.",
    "scene": "arrivals",
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 858
+   "h": 858,
+   "alt": "The laugh across the table"
   },
   {
    "id": "cracking",
    "src": "07_314291_000034_cracking-the-can.jpg",
-   "caption": "The first one, cracked",
+   "caption": "First one of the day. Pssst.",
    "scene": "arrivals",
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 865
+   "h": 865,
+   "alt": "The first one, cracked"
   },
   {
    "id": "sinking",
    "src": "08_344294_000026_sinking-long-bubble-trail.jpg",
-   "caption": "Going down",
+   "caption": "And down it goes.",
    "scene": "pool",
    "cast": false,
    "shotOn": "Underwater disposable",
    "w": 1280,
-   "h": 865
+   "h": 865,
+   "alt": "Going down"
   },
   {
    "id": "pool-floor",
    "src": "09_344294_000029_can-at-rest-on-the-pool-floor.jpg",
-   "caption": "At rest on the pool floor",
+   "caption": "It's fine. It's sealed.",
    "scene": "pool",
    "cast": false,
    "shotOn": "Underwater disposable",
    "w": 1280,
-   "h": 865
+   "h": 865,
+   "alt": "At rest on the pool floor"
   },
   {
    "id": "surface",
    "src": "10_344294_000031_can-at-the-surface-with-reflection.jpg",
-   "caption": "Back up for air",
+   "caption": "Coming up for air.",
    "scene": "pool",
    "cast": false,
    "shotOn": "Underwater disposable",
    "w": 1280,
-   "h": 865
+   "h": 865,
+   "alt": "Back up for air"
   },
   {
    "id": "head-back-bench",
@@ -108,17 +118,19 @@
    "cast": false,
    "shotOn": "Underwater disposable",
    "w": 1280,
-   "h": 865
+   "h": 865,
+   "alt": "Head back on the white bench"
   },
   {
    "id": "pov-lap",
    "src": "12_334292_000025_pov-own-lap-open-paloma.jpg",
-   "caption": "My lap, my Paloma",
+   "caption": "View from my lap.",
    "scene": "sunset",
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 858
+   "h": 858,
+   "alt": "My lap, my Paloma"
   },
   {
    "id": "bunting-laugh",
@@ -128,27 +140,30 @@
    "cast": true,
    "shotOn": "Kodak Charmera, Shaun's",
    "w": 1280,
-   "h": 960
+   "h": 960,
+   "alt": "Laughing under the bunting"
   },
   {
    "id": "two-margs-shadow",
    "src": "14_334293_000029_two-margaritas-shadow-across-frame.jpg",
-   "caption": "Two margaritas and a thumb",
+   "caption": "Cheers, plus a thumb.",
    "scene": "dark",
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 858
+   "h": 858,
+   "alt": "Two margaritas and a thumb"
   },
   {
    "id": "sunset-toast",
    "src": "15_BERN_127_the-sunset-toast.jpg",
-   "caption": "The sunset toast",
+   "caption": "Everyone stood up for this one.",
    "scene": "sunset",
    "cast": false,
    "shotOn": "Bernard's phone",
    "w": 960,
-   "h": 1280
+   "h": 1280,
+   "alt": "The sunset toast"
   },
   {
    "id": "pour-glass",
@@ -158,7 +173,8 @@
    "cast": false,
    "shotOn": "Kodak Charmera, Shaun's",
    "w": 1280,
-   "h": 960
+   "h": 960,
+   "alt": "The pour"
   },
   {
    "id": "beaming-flag",
@@ -168,17 +184,19 @@
    "cast": true,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 858
+   "h": 858,
+   "alt": "Beaming under the flags"
   },
   {
    "id": "chips-chillies",
    "src": "18_CHAR_124_chips-and-two-chillies.jpg",
-   "caption": "Chips and two chillies",
+   "caption": "Two chillies. One dare.",
    "scene": "fire",
    "cast": false,
    "shotOn": "Kodak Charmera, Shaun's",
    "w": 1280,
-   "h": 960
+   "h": 960,
+   "alt": "Chips and two chillies"
   },
   {
    "id": "fan-eyes",
@@ -188,27 +206,30 @@
    "cast": true,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 865
+   "h": 865,
+   "alt": "Fan out, eyes closed"
   },
   {
    "id": "spicy-lace",
    "src": "20_314291_000026_spicy-can-and-glass-on-cream-lace.jpg",
-   "caption": "Spicy, on cream lace",
+   "caption": "Spicy, and a very good blouse.",
    "scene": null,
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 865
+   "h": 865,
+   "alt": "Spicy, on cream lace"
   },
   {
    "id": "the-toast",
    "src": "21_334292_000001_the-toast.jpg",
-   "caption": "The toast",
+   "caption": "Glasses up before the food got cold.",
    "scene": "dark",
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 858
+   "h": 858,
+   "alt": "The toast"
   },
   {
    "id": "face-can",
@@ -218,37 +239,41 @@
    "cast": true,
    "shotOn": "Kodak Charmera, Shaun's",
    "w": 1280,
-   "h": 960
+   "h": 960,
+   "alt": "Full frame, can in hand"
   },
   {
    "id": "cackling-grid",
    "src": "23_CHAR_156_cackling-over-the-grid.jpg",
-   "caption": "Cackling over the grid",
+   "caption": "Supposed to be watching the meat.",
    "scene": "fire",
    "cast": false,
    "shotOn": "Kodak Charmera, Shaun's",
    "w": 1280,
-   "h": 960
+   "h": 960,
+   "alt": "Cackling over the grid"
   },
   {
    "id": "orange-leak",
    "src": "24_314291_000010_orange-leak-half-the-frame.jpg",
-   "caption": "Half the frame lost to a light leak",
+   "caption": "The light leak ate half of this one.",
    "scene": "sunset",
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 865
+   "h": 865,
+   "alt": "Half the frame lost to a light leak"
   },
   {
    "id": "carrying-cooler",
    "src": "25_334292_000035_carrying-the-cooler.jpg",
-   "caption": "The cooler arrives",
+   "caption": "The cooler arrived before most guests.",
    "scene": "arrivals",
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 858
+   "h": 858,
+   "alt": "The cooler arrives"
   },
   {
    "id": "kebab",
@@ -258,37 +283,41 @@
    "cast": true,
    "shotOn": "Kodak Charmera, Shaun's",
    "w": 1280,
-   "h": 960
+   "h": 960,
+   "alt": "Straight off the skewer"
   },
   {
    "id": "clinked-sunset",
    "src": "27_344294_000010_two-cans-clinked-at-sunset.jpg",
-   "caption": "Two cans, clinked",
+   "caption": "Clink. Sun's going.",
    "scene": "sunset",
    "cast": false,
    "shotOn": "Underwater disposable",
    "w": 1280,
-   "h": 865
+   "h": 865,
+   "alt": "Two cans, clinked"
   },
   {
    "id": "lying-back",
    "src": "28_344294_000014_lying-back-laughing.jpg",
-   "caption": "Lying back, laughing",
+   "caption": "Couch claimed.",
    "scene": "pool",
    "cast": false,
    "shotOn": "Underwater disposable",
    "w": 1280,
-   "h": 865
+   "h": 865,
+   "alt": "Lying back, laughing"
   },
   {
    "id": "paloma-hedge",
    "src": "29_334292_000021_paloma-in-the-hedge.jpg",
-   "caption": "Paloma in the hedge",
+   "caption": "Hedge Paloma. Don't ask.",
    "scene": null,
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 858
+   "h": 858,
+   "alt": "Paloma in the hedge"
   },
   {
    "id": "couple-cheers",
@@ -298,17 +327,19 @@
    "cast": true,
    "shotOn": "Kodak Charmera, Shaun's",
    "w": 1280,
-   "h": 960
+   "h": 960,
+   "alt": "Cheers on the couch"
   },
   {
    "id": "reaching",
    "src": "32_BERN_122_reaching-across-the-table.jpg",
-   "caption": "Reaching across the table",
+   "caption": "Pass the corn. No, the other corn.",
    "scene": "sunset",
    "cast": false,
    "shotOn": "Bernard's phone",
    "w": 960,
-   "h": 1280
+   "h": 1280,
+   "alt": "Reaching across the table"
   },
   {
    "id": "sideways-laugh",
@@ -318,17 +349,19 @@
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 865
+   "h": 865,
+   "alt": "Sideways, laughing"
   },
   {
    "id": "cooler-above",
    "src": "34_334293_000021_cooler-from-above-hand-in-ice.jpg",
-   "caption": "The cooler box, from above",
+   "caption": "Full. For about an hour.",
    "scene": "arrivals",
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 858
+   "h": 858,
+   "alt": "The cooler box, from above"
   },
   {
    "id": "upside-grin",
@@ -338,17 +371,19 @@
    "cast": true,
    "shotOn": "Kodak Charmera, Shaun's",
    "w": 1280,
-   "h": 960
+   "h": 960,
+   "alt": "Upside-down grin"
   },
   {
    "id": "bubble-burst",
    "src": "36_344294_000024_the-bubble-burst.jpg",
-   "caption": "The bubble burst",
+   "caption": "Bubbles.",
    "scene": "pool",
    "cast": false,
    "shotOn": "Underwater disposable",
    "w": 1280,
-   "h": 865
+   "h": 865,
+   "alt": "The bubble burst"
   },
   {
    "id": "sea-pink-leak",
@@ -358,7 +393,8 @@
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 865
+   "h": 865,
+   "alt": "Sea, sideways, pink leak"
   },
   {
    "id": "flag-face",
@@ -368,17 +404,19 @@
    "cast": true,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 858
+   "h": 858,
+   "alt": "The flag, beside her face"
   },
   {
    "id": "three-wall",
    "src": "40_CHAR_216_three-at-the-wall-at-sunset.jpg",
-   "caption": "Three at the wall",
+   "caption": "Album cover, take one.",
    "scene": "sunset",
    "cast": false,
    "shotOn": "Kodak Charmera, Shaun's",
    "w": 1280,
-   "h": 960
+   "h": 960,
+   "alt": "Three at the wall"
   },
   {
    "id": "laugh-glass",
@@ -388,67 +426,74 @@
    "cast": true,
    "shotOn": "Kodak Charmera, Shaun's",
    "w": 1280,
-   "h": 960
+   "h": 960,
+   "alt": "Laughing into the glass"
   },
   {
    "id": "paloma-plate",
    "src": "46_334292_000009_paloma-on-the-pink-plate.jpg",
-   "caption": "Paloma on the pink plate",
+   "caption": "Someone matched the can to the plate.",
    "scene": "dark",
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 858
+   "h": 858,
+   "alt": "Paloma on the pink plate"
   },
   {
    "id": "glass-blur",
    "src": "47_334292_000041_glass-held-up-blurred.jpg",
-   "caption": "Glass up, blurred",
+   "caption": "Too fast for the camera.",
    "scene": "dark",
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 858
+   "h": 858,
+   "alt": "Glass up, blurred"
   },
   {
    "id": "guac-fire",
    "src": "48_CHAR_061_guacamole-with-the-fire-behind.jpg",
-   "caption": "Guacamole, fire behind",
+   "caption": "Guac by the fire. Mostly guac.",
    "scene": "fire",
    "cast": false,
    "shotOn": "Kodak Charmera, Shaun's",
    "w": 1280,
-   "h": 960
+   "h": 960,
+   "alt": "Guacamole, fire behind"
   },
   {
    "id": "waterline",
    "src": "49_344294_000023_three-cans-from-the-waterline.jpg",
-   "caption": "Three cans from the waterline",
+   "caption": "Pool closed. Cans only.",
    "scene": "pool",
    "cast": false,
    "shotOn": "Underwater disposable",
    "w": 1280,
-   "h": 866
+   "h": 866,
+   "alt": "Three cans from the waterline"
   },
   {
    "id": "sea-point",
    "src": "50_344294_000012_can-vs-sea-point.jpg",
-   "caption": "One can against Sea Point",
+   "caption": "View's alright.",
    "scene": "sunset",
    "cast": false,
    "shotOn": "Underwater disposable",
    "w": 1280,
-   "h": 866
+   "h": 866,
+   "alt": "One can against Sea Point"
   },
   {
    "id": "second-bubble",
    "src": "51_344294_000028_the-second-bubble-burst.jpg",
-   "caption": "The second one goes in",
+   "caption": "Again, for the camera.",
    "scene": "pool",
    "cast": false,
    "shotOn": "Underwater disposable",
    "w": 1280,
-   "h": 866
+   "h": 866,
+   "alt": "The second one goes in"
   },
   {
    "id": "corn-shut",
@@ -458,7 +503,8 @@
    "cast": true,
    "shotOn": "Kodak Charmera, Shaun's",
    "w": 1280,
-   "h": 960
+   "h": 960,
+   "alt": "Corn, eyes screwed shut"
   },
   {
    "id": "mustard-polo",
@@ -468,27 +514,30 @@
    "cast": true,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 858
+   "h": 858,
+   "alt": "Laughing through the leak"
   },
   {
    "id": "behind-fan",
    "src": "55_334293_000036_laughing-behind-the-fan.jpg",
-   "caption": "Laughing behind the fan",
+   "caption": "Fan out. Story going.",
    "scene": "fire",
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 858
+   "h": 858,
+   "alt": "Laughing behind the fan"
   },
   {
    "id": "golden-couple",
    "src": "56_CHAR_184_golden-hour-couple.jpg",
-   "caption": "Golden hour",
+   "caption": "Five minutes of perfect light.",
    "scene": "sunset",
    "cast": false,
    "shotOn": "Kodak Charmera, Shaun's",
    "w": 1280,
-   "h": 960
+   "h": 960,
+   "alt": "Golden hour"
   },
   {
    "id": "kodak-cheers",
@@ -498,17 +547,19 @@
    "cast": true,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 866
+   "h": 866,
+   "alt": "Shooting back, cheers"
   },
   {
    "id": "red-flag-walk",
    "src": "58_334293_000041_walking-under-the-red-flag.jpg",
-   "caption": "Walking under the red flag",
+   "caption": "Mid-story. Didn't stop.",
    "scene": "arrivals",
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 858
+   "h": 858,
+   "alt": "Walking under the red flag"
   },
   {
    "id": "branded-glass",
@@ -518,27 +569,30 @@
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 866
+   "h": 866,
+   "alt": "Close up, glass up"
   },
   {
    "id": "corn-tray",
    "src": "60_CHAR_232_corn-tray-laugh.jpg",
-   "caption": "The corn tray",
+   "caption": "Corn arrives. Conversation stops.",
    "scene": "dark",
    "cast": false,
    "shotOn": "Kodak Charmera, Shaun's",
    "w": 1280,
-   "h": 960
+   "h": 960,
+   "alt": "The corn tray"
   },
   {
    "id": "salad-dusk",
    "src": "61_334292_000010_serving-salad-at-dusk.jpg",
-   "caption": "Serving salad at dusk",
+   "caption": "Still serving. Nobody helped.",
    "scene": "dark",
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 858
+   "h": 858,
+   "alt": "Serving salad at dusk"
   },
   {
    "id": "knee-leak",
@@ -548,27 +602,30 @@
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 858
+   "h": 858,
+   "alt": "Can on the knee"
   },
   {
    "id": "guac-pound",
    "src": "63_CHAR_064_pounding-guac-on-camera.jpg",
-   "caption": "Pounding the guac, on camera",
+   "caption": "Filming the guac like it's a wedding.",
    "scene": "fire",
    "cast": false,
    "shotOn": "Kodak Charmera, Shaun's",
    "w": 1280,
-   "h": 960
+   "h": 960,
+   "alt": "Pounding the guac, on camera"
   },
   {
    "id": "handed-disposable",
    "src": "64_ANDA_026_handed-a-disposable.jpg",
-   "caption": "Handed a disposable, and the brief",
+   "caption": "Here's your camera. Don't waste it.",
    "scene": "arrivals",
    "cast": false,
    "shotOn": "Anda's phone",
    "w": 1280,
-   "h": 960
+   "h": 960,
+   "alt": "Handed a disposable, and the brief"
   },
   {
    "id": "sideways-two",
@@ -578,7 +635,8 @@
    "cast": true,
    "shotOn": "Anda's phone",
    "w": 1280,
-   "h": 960
+   "h": 960,
+   "alt": "Two of them, sideways"
   },
   {
    "id": "salt-rim",
@@ -588,27 +646,30 @@
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 858
+   "h": 858,
+   "alt": "Salt rim and chilli"
   },
   {
    "id": "atlantic-two",
    "src": "67_334292_000028_two-of-them-against-the-atlantic.jpg",
-   "caption": "Two of them against the Atlantic",
+   "caption": "Same joke. Both laughing.",
    "scene": "sunset",
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 858
+   "h": 858,
+   "alt": "Two of them against the Atlantic"
   },
   {
    "id": "drinks-station",
    "src": "69_334293_000032_the-drinks-station-at-night.jpg",
-   "caption": "The drinks station, after dark",
+   "caption": "Someone's thumb. Every roll has one.",
    "scene": "dark",
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 858
+   "h": 858,
+   "alt": "The drinks station, after dark"
   },
   {
    "id": "under-trees",
@@ -618,27 +679,30 @@
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 866
+   "h": 866,
+   "alt": "Low, under the trees"
   },
   {
    "id": "walking-away",
    "src": "71_CHAR_129_walking-away-down-the-terrace.jpg",
-   "caption": "Walking away down the terrace",
+   "caption": "Dancing all the way to the gate.",
    "scene": "dark",
    "cast": false,
    "shotOn": "Kodak Charmera, Shaun's",
    "w": 1280,
-   "h": 960
+   "h": 960,
+   "alt": "Walking away down the terrace"
   },
   {
    "id": "hand-ice",
    "src": "72_314291_000027_hand-in-the-cooler-ice.jpg",
-   "caption": "Hand in the ice",
+   "caption": "Reaching in blind.",
    "scene": "arrivals",
    "cast": false,
    "shotOn": "Kodak disposable",
    "w": 1280,
-   "h": 865
+   "h": 865,
+   "alt": "Hand in the ice"
   },
   {
    "id": "t-lineup",
@@ -648,7 +712,8 @@
    "cast": false,
    "shotOn": "Bernard's phone",
    "w": 960,
-   "h": 1280
+   "h": 1280,
+   "alt": "The three in the cooler box"
   },
   {
    "id": "t-paloma-ice",
@@ -658,7 +723,8 @@
    "cast": false,
    "shotOn": "Bernard's phone",
    "w": 720,
-   "h": 1280
+   "h": 1280,
+   "alt": "Paloma in ice"
   },
   {
    "id": "t-pool-coping",
@@ -668,7 +734,8 @@
    "cast": false,
    "shotOn": "Underwater disposable",
    "w": 1280,
-   "h": 866
+   "h": 866,
+   "alt": "Three on the pool coping"
   },
   {
    "id": "t-held",
@@ -678,7 +745,8 @@
    "cast": false,
    "shotOn": "Anda's phone",
    "w": 1280,
-   "h": 960
+   "h": 960,
+   "alt": "Three, held"
   },
   {
    "id": "t-pour",
@@ -688,7 +756,8 @@
    "cast": false,
    "shotOn": "Bernard's phone",
    "w": 960,
-   "h": 1280
+   "h": 1280,
+   "alt": "The Paloma pour"
   },
   {
    "id": "can-paloma",
@@ -698,7 +767,8 @@
    "cast": false,
    "shotOn": "Bernard's phone",
    "w": 886,
-   "h": 1280
+   "h": 1280,
+   "alt": "Paloma"
   },
   {
    "id": "can-margarita",
@@ -708,7 +778,8 @@
    "cast": false,
    "shotOn": "Bernard's phone",
    "w": 883,
-   "h": 1280
+   "h": 1280,
+   "alt": "Margarita"
   },
   {
    "id": "can-spicy",
@@ -718,177 +789,195 @@
    "cast": false,
    "shotOn": "Bernard's phone",
    "w": 886,
-   "h": 1280
+   "h": 1280,
+   "alt": "Spicy Margarita"
   },
   {
    "id": "l-flags",
    "src": "L001.jpg",
-   "caption": "Papel picado over the terrace",
+   "caption": "Up since nine. Worth it.",
    "scene": "arrivals",
    "cast": false,
    "shotOn": "Liezl's Fuji X100VI",
    "w": 1280,
-   "h": 853
+   "h": 853,
+   "alt": "Papel picado over the terrace"
   },
   {
    "id": "l-cooler-in",
    "src": "L087.jpg",
-   "caption": "The cooler, carried in",
+   "caption": "Delivery, with a smile.",
    "scene": "arrivals",
    "cast": false,
    "shotOn": "Liezl's Fuji X100VI",
    "w": 853,
-   "h": 1280
+   "h": 1280,
+   "alt": "The cooler, carried in"
   },
   {
    "id": "l-flowers",
    "src": "L084.jpg",
-   "caption": "Flowers at the table",
+   "caption": "Someone brought flowers. Show-off.",
    "scene": "arrivals",
    "cast": false,
    "shotOn": "Liezl's Fuji X100VI",
    "w": 1280,
-   "h": 853
+   "h": 853,
+   "alt": "Flowers at the table"
   },
   {
    "id": "l-fire-lit",
    "src": "L022.jpg",
-   "caption": "The fire, lit",
+   "caption": "Fire's going. Eating at six. Maybe seven.",
    "scene": "fire",
    "cast": false,
    "shotOn": "Liezl's Fuji X100VI",
    "w": 853,
-   "h": 1280
+   "h": 1280,
+   "alt": "The fire, lit"
   },
   {
    "id": "l-turning",
    "src": "L092.jpg",
-   "caption": "Turning the meat",
+   "caption": "Do not touch the tongs.",
    "scene": "fire",
    "cast": false,
    "shotOn": "Liezl's Fuji X100VI",
    "w": 853,
-   "h": 1280
+   "h": 1280,
+   "alt": "Turning the meat"
   },
   {
    "id": "l-skewers",
    "src": "L094.jpg",
-   "caption": "Skewers on the grid",
+   "caption": "Not ready. Ask again in five.",
    "scene": "fire",
    "cast": false,
    "shotOn": "Liezl's Fuji X100VI",
    "w": 1280,
-   "h": 853
+   "h": 853,
+   "alt": "Skewers on the grid"
   },
   {
    "id": "l-salad-laugh",
    "src": "L118.jpg",
-   "caption": "Salad duty, at sunset",
+   "caption": "Salad duty. Taken very seriously.",
    "scene": "sunset",
    "cast": false,
    "shotOn": "Liezl's Fuji X100VI",
    "w": 1280,
-   "h": 853
+   "h": 853,
+   "alt": "Salad duty, at sunset"
   },
   {
    "id": "l-toast-above",
    "src": "L128.jpg",
-   "caption": "The toast, from above",
+   "caption": "Everyone in. Quickly.",
    "scene": "sunset",
    "cast": false,
    "shotOn": "Liezl's Fuji X100VI",
    "w": 853,
-   "h": 1280
+   "h": 1280,
+   "alt": "The toast, from above"
   },
   {
    "id": "l-paloma-dusk",
    "src": "L145.jpg",
-   "caption": "Paloma on the wall, last light",
+   "caption": "Left on the wall. Came back for it.",
    "scene": "sunset",
    "cast": false,
    "shotOn": "Liezl's Fuji X100VI",
    "w": 1280,
-   "h": 853
+   "h": 853,
+   "alt": "Paloma on the wall, last light"
   },
   {
    "id": "l-passing",
    "src": "L164.jpg",
-   "caption": "Passing the skewers",
+   "caption": "Sharing is caring. Mostly.",
    "scene": "dark",
    "cast": false,
    "shotOn": "Liezl's Fuji X100VI",
    "w": 1280,
-   "h": 853
+   "h": 853,
+   "alt": "Passing the skewers"
   },
   {
    "id": "l-paloma-late",
    "src": "L167.jpg",
-   "caption": "Paloma, after the sun went",
+   "caption": "Sun's gone. Paloma isn't.",
    "scene": "dark",
    "cast": false,
    "shotOn": "Liezl's Fuji X100VI",
    "w": 1280,
-   "h": 853
+   "h": 853,
+   "alt": "Paloma, after the sun went"
   },
   {
    "id": "l-prints",
    "src": "L107.jpg",
-   "caption": "The prints came back",
+   "caption": "Back from the chemist. Worth the wait.",
    "scene": null,
    "cast": false,
    "shotOn": "Liezl's Fuji X100VI",
    "w": 1112,
-   "h": 1280
+   "h": 1280,
+   "alt": "The prints came back"
   },
   {
    "id": "l-pour",
    "src": "L111.jpg",
-   "caption": "Margarita, over salt",
+   "caption": "Salt rim. Steady hands.",
    "scene": null,
    "cast": false,
    "shotOn": "Liezl's Fuji X100VI",
    "w": 1280,
-   "h": 853
+   "h": 853,
+   "alt": "Margarita, over salt"
   },
   {
    "id": "l-bottles",
    "src": "L025.jpg",
-   "caption": "Fuego Tequila at the drinks table",
+   "caption": "Bottles out. Chillies everywhere.",
    "scene": null,
    "cast": false,
    "shotOn": "Liezl's Fuji X100VI",
    "w": 1280,
-   "h": 853
+   "h": 853,
+   "alt": "Fuego Tequila at the drinks table"
   },
   {
    "id": "l-bottles-table",
    "src": "L026.jpg",
-   "caption": "Bottles, chillies, proteas",
+   "caption": "Proteas, because Cape Town.",
    "scene": null,
    "cast": false,
    "shotOn": "Liezl's Fuji X100VI",
    "w": 1280,
-   "h": 853
+   "h": 853,
+   "alt": "Bottles, chillies, proteas"
   },
   {
    "id": "l-marg-sea",
    "src": "L006.jpg",
-   "caption": "Margarita, Atlantic behind",
+   "caption": "Holding it up for the Atlantic.",
    "scene": null,
    "cast": false,
    "shotOn": "Liezl's Fuji X100VI",
    "w": 853,
-   "h": 1280
+   "h": 1280,
+   "alt": "Margarita, Atlantic behind"
   },
   {
    "id": "l-spicy-ice",
    "src": "L007.jpg",
-   "caption": "Spicy, in the ice",
+   "caption": "Iced. Properly.",
    "scene": null,
    "cast": false,
    "shotOn": "Liezl's Fuji X100VI",
    "w": 853,
-   "h": 1280
+   "h": 1280,
+   "alt": "Spicy, in the ice"
   },
   {
    "id": "l-paloma-cooler",
@@ -898,17 +987,19 @@
    "cast": false,
    "shotOn": "Liezl's Fuji X100VI",
    "w": 853,
-   "h": 1280
+   "h": 1280,
+   "alt": "Paloma by the cooler"
   },
   {
    "id": "l-three-last",
    "src": "L150.jpg",
-   "caption": "All three, last light",
+   "caption": "Family photo.",
    "scene": null,
    "cast": false,
    "shotOn": "Liezl's Fuji X100VI",
    "w": 1280,
-   "h": 853
+   "h": 853,
+   "alt": "All three, last light"
   },
   {
    "id": "can-nonalc",
@@ -918,7 +1009,8 @@
    "cast": false,
    "shotOn": "Liezl's Fuji X100VI",
    "w": 620,
-   "h": 1086
+   "h": 1086,
+   "alt": "Non-Alc Margarita"
   }
  ]
 }

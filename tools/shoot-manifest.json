@@ -17,468 +17,537 @@
    "id": "hug",
    "src": "01_314291_000022_the-hug.jpg",
    "cam": "film",
-   "caption": "The hug at the door",
-   "scene": "arrivals"
+   "caption": "Haven't seen you since forever.",
+   "scene": "arrivals",
+   "alt": "The hug at the door"
   },
   {
    "id": "paloma-at-lens",
    "src": "02_314291_000032_paloma-shoved-at-the-lens.jpg",
    "cam": "film",
    "caption": "Paloma, straight at the lens",
-   "scene": "sunset"
+   "scene": "sunset",
+   "alt": "Paloma, straight at the lens"
   },
   {
    "id": "corn-sunburst",
    "src": "03_314295_000008_corn-bite-sunburst.jpg",
    "cam": "film",
    "caption": "Corn, and the sun coming through",
-   "cast": true
+   "cast": true,
+   "alt": "Corn, and the sun coming through"
   },
   {
    "id": "grin-grid",
    "src": "04_CHAR_157_grin-over-the-grid.jpg",
    "cam": "charmera",
-   "caption": "Grinning over the grid",
-   "scene": "fire"
+   "caption": "Who gave them the camera.",
+   "scene": "fire",
+   "alt": "Grinning over the grid"
   },
   {
    "id": "armful",
    "src": "05_334292_000032_armful-of-cans.jpg",
    "cam": "film",
-   "caption": "An armful for the table"
+   "caption": "Carrying \"just a few\".",
+   "alt": "An armful for the table"
   },
   {
    "id": "laugh-table",
    "src": "06_334292_000030_the-laugh-across-the-table.jpg",
    "cam": "film",
-   "caption": "The laugh across the table",
-   "scene": "arrivals"
+   "caption": "Whatever was said, it landed.",
+   "scene": "arrivals",
+   "alt": "The laugh across the table"
   },
   {
    "id": "cracking",
    "src": "07_314291_000034_cracking-the-can.jpg",
    "cam": "film",
-   "caption": "The first one, cracked",
-   "scene": "arrivals"
+   "caption": "First one of the day. Pssst.",
+   "scene": "arrivals",
+   "alt": "The first one, cracked"
   },
   {
    "id": "sinking",
    "src": "08_344294_000026_sinking-long-bubble-trail.jpg",
    "cam": "underwater",
-   "caption": "Going down",
-   "scene": "pool"
+   "caption": "And down it goes.",
+   "scene": "pool",
+   "alt": "Going down"
   },
   {
    "id": "pool-floor",
    "src": "09_344294_000029_can-at-rest-on-the-pool-floor.jpg",
    "cam": "underwater",
-   "caption": "At rest on the pool floor",
-   "scene": "pool"
+   "caption": "It's fine. It's sealed.",
+   "scene": "pool",
+   "alt": "At rest on the pool floor"
   },
   {
    "id": "surface",
    "src": "10_344294_000031_can-at-the-surface-with-reflection.jpg",
    "cam": "underwater",
-   "caption": "Back up for air",
-   "scene": "pool"
+   "caption": "Coming up for air.",
+   "scene": "pool",
+   "alt": "Back up for air"
   },
   {
    "id": "head-back-bench",
    "src": "11_344294_000015_head-back-laughing-white-bench.jpg",
    "cam": "underwater",
-   "caption": "Head back on the white bench"
+   "caption": "Head back on the white bench",
+   "alt": "Head back on the white bench"
   },
   {
    "id": "pov-lap",
    "src": "12_334292_000025_pov-own-lap-open-paloma.jpg",
    "cam": "film",
-   "caption": "My lap, my Paloma",
-   "scene": "sunset"
+   "caption": "View from my lap.",
+   "scene": "sunset",
+   "alt": "My lap, my Paloma"
   },
   {
    "id": "bunting-laugh",
    "src": "13_CHAR_028_head-back-laugh-under-bunting.jpg",
    "cam": "charmera",
    "caption": "Laughing under the bunting",
-   "cast": true
+   "cast": true,
+   "alt": "Laughing under the bunting"
   },
   {
    "id": "two-margs-shadow",
    "src": "14_334293_000029_two-margaritas-shadow-across-frame.jpg",
    "cam": "film",
-   "caption": "Two margaritas and a thumb",
-   "scene": "dark"
+   "caption": "Cheers, plus a thumb.",
+   "scene": "dark",
+   "alt": "Two margaritas and a thumb"
   },
   {
    "id": "sunset-toast",
    "src": "15_BERN_127_the-sunset-toast.jpg",
    "cam": "bernard",
-   "caption": "The sunset toast",
-   "scene": "sunset"
+   "caption": "Everyone stood up for this one.",
+   "scene": "sunset",
+   "alt": "The sunset toast"
   },
   {
    "id": "pour-glass",
    "src": "16_CHAR_100_the-pour-into-the-branded-glass.jpg",
    "cam": "charmera",
-   "caption": "The pour"
+   "caption": "The pour",
+   "alt": "The pour"
   },
   {
    "id": "beaming-flag",
    "src": "17_334293_000042_beaming-under-the-flag.jpg",
    "cam": "film",
    "caption": "Beaming under the flags",
-   "cast": true
+   "cast": true,
+   "alt": "Beaming under the flags"
   },
   {
    "id": "chips-chillies",
    "src": "18_CHAR_124_chips-and-two-chillies.jpg",
    "cam": "charmera",
-   "caption": "Chips and two chillies",
-   "scene": "fire"
+   "caption": "Two chillies. One dare.",
+   "scene": "fire",
+   "alt": "Chips and two chillies"
   },
   {
    "id": "fan-eyes",
    "src": "19_314295_000027_fan-eyes-closed.jpg",
    "cam": "film",
    "caption": "Fan out, eyes closed",
-   "cast": true
+   "cast": true,
+   "alt": "Fan out, eyes closed"
   },
   {
    "id": "spicy-lace",
    "src": "20_314291_000026_spicy-can-and-glass-on-cream-lace.jpg",
    "cam": "film",
-   "caption": "Spicy, on cream lace"
+   "caption": "Spicy, and a very good blouse.",
+   "alt": "Spicy, on cream lace"
   },
   {
    "id": "the-toast",
    "src": "21_334292_000001_the-toast.jpg",
    "cam": "film",
-   "caption": "The toast",
-   "scene": "dark"
+   "caption": "Glasses up before the food got cold.",
+   "scene": "dark",
+   "alt": "The toast"
   },
   {
    "id": "face-can",
    "src": "22_CHAR_056_face-full-frame-with-a-can.jpg",
    "cam": "charmera",
    "caption": "Full frame, can in hand",
-   "cast": true
+   "cast": true,
+   "alt": "Full frame, can in hand"
   },
   {
    "id": "cackling-grid",
    "src": "23_CHAR_156_cackling-over-the-grid.jpg",
    "cam": "charmera",
-   "caption": "Cackling over the grid",
-   "scene": "fire"
+   "caption": "Supposed to be watching the meat.",
+   "scene": "fire",
+   "alt": "Cackling over the grid"
   },
   {
    "id": "orange-leak",
    "src": "24_314291_000010_orange-leak-half-the-frame.jpg",
    "cam": "film",
-   "caption": "Half the frame lost to a light leak",
-   "scene": "sunset"
+   "caption": "The light leak ate half of this one.",
+   "scene": "sunset",
+   "alt": "Half the frame lost to a light leak"
   },
   {
    "id": "carrying-cooler",
    "src": "25_334292_000035_carrying-the-cooler.jpg",
    "cam": "film",
-   "caption": "The cooler arrives",
-   "scene": "arrivals"
+   "caption": "The cooler arrived before most guests.",
+   "scene": "arrivals",
+   "alt": "The cooler arrives"
   },
   {
    "id": "kebab",
    "src": "26_CHAR_235_kebab-straight-off-the-skewer.jpg",
    "cam": "charmera",
    "caption": "Straight off the skewer",
-   "cast": true
+   "cast": true,
+   "alt": "Straight off the skewer"
   },
   {
    "id": "clinked-sunset",
    "src": "27_344294_000010_two-cans-clinked-at-sunset.jpg",
    "cam": "underwater",
-   "caption": "Two cans, clinked",
-   "scene": "sunset"
+   "caption": "Clink. Sun's going.",
+   "scene": "sunset",
+   "alt": "Two cans, clinked"
   },
   {
    "id": "lying-back",
    "src": "28_344294_000014_lying-back-laughing.jpg",
    "cam": "underwater",
-   "caption": "Lying back, laughing",
-   "scene": "pool"
+   "caption": "Couch claimed.",
+   "scene": "pool",
+   "alt": "Lying back, laughing"
   },
   {
    "id": "paloma-hedge",
    "src": "29_334292_000021_paloma-in-the-hedge.jpg",
    "cam": "film",
-   "caption": "Paloma in the hedge"
+   "caption": "Hedge Paloma. Don't ask.",
+   "alt": "Paloma in the hedge"
   },
   {
    "id": "couple-cheers",
    "src": "30_CHAR_109_the-couple-cheersing.jpg",
    "cam": "charmera",
    "caption": "Cheers on the couch",
-   "cast": true
+   "cast": true,
+   "alt": "Cheers on the couch"
   },
   {
    "id": "reaching",
    "src": "32_BERN_122_reaching-across-the-table.jpg",
    "cam": "bernard",
-   "caption": "Reaching across the table",
-   "scene": "sunset"
+   "caption": "Pass the corn. No, the other corn.",
+   "scene": "sunset",
+   "alt": "Reaching across the table"
   },
   {
    "id": "sideways-laugh",
    "src": "33_314291_000040_head-back-laughing-sideways.jpg",
    "cam": "film",
-   "caption": "Sideways, laughing"
+   "caption": "Sideways, laughing",
+   "alt": "Sideways, laughing"
   },
   {
    "id": "cooler-above",
    "src": "34_334293_000021_cooler-from-above-hand-in-ice.jpg",
    "cam": "film",
-   "caption": "The cooler box, from above",
-   "scene": "arrivals"
+   "caption": "Full. For about an hour.",
+   "scene": "arrivals",
+   "alt": "The cooler box, from above"
   },
   {
    "id": "upside-grin",
    "src": "35_CHAR_059_upside-down-grin.jpg",
    "cam": "charmera",
    "caption": "Upside-down grin",
-   "cast": true
+   "cast": true,
+   "alt": "Upside-down grin"
   },
   {
    "id": "bubble-burst",
    "src": "36_344294_000024_the-bubble-burst.jpg",
    "cam": "underwater",
-   "caption": "The bubble burst",
-   "scene": "pool"
+   "caption": "Bubbles.",
+   "scene": "pool",
+   "alt": "The bubble burst"
   },
   {
    "id": "sea-pink-leak",
    "src": "38_314295_000031_sideways-sea-pink-leak.jpg",
    "cam": "film",
-   "caption": "Sea, sideways, pink leak"
+   "caption": "Sea, sideways, pink leak",
+   "alt": "Sea, sideways, pink leak"
   },
   {
    "id": "flag-face",
    "src": "39_334293_000031_flag-beside-her-face.jpg",
    "cam": "film",
    "caption": "The flag, beside her face",
-   "cast": true
+   "cast": true,
+   "alt": "The flag, beside her face"
   },
   {
    "id": "three-wall",
    "src": "40_CHAR_216_three-at-the-wall-at-sunset.jpg",
    "cam": "charmera",
-   "caption": "Three at the wall",
-   "scene": "sunset"
+   "caption": "Album cover, take one.",
+   "scene": "sunset",
+   "alt": "Three at the wall"
   },
   {
    "id": "laugh-glass",
    "src": "44_CHAR_042_laughing-into-the-glass.jpg",
    "cam": "charmera",
    "caption": "Laughing into the glass",
-   "cast": true
+   "cast": true,
+   "alt": "Laughing into the glass"
   },
   {
    "id": "paloma-plate",
    "src": "46_334292_000009_paloma-on-the-pink-plate.jpg",
    "cam": "film",
-   "caption": "Paloma on the pink plate",
-   "scene": "dark"
+   "caption": "Someone matched the can to the plate.",
+   "scene": "dark",
+   "alt": "Paloma on the pink plate"
   },
   {
    "id": "glass-blur",
    "src": "47_334292_000041_glass-held-up-blurred.jpg",
    "cam": "film",
-   "caption": "Glass up, blurred",
-   "scene": "dark"
+   "caption": "Too fast for the camera.",
+   "scene": "dark",
+   "alt": "Glass up, blurred"
   },
   {
    "id": "guac-fire",
    "src": "48_CHAR_061_guacamole-with-the-fire-behind.jpg",
    "cam": "charmera",
-   "caption": "Guacamole, fire behind",
-   "scene": "fire"
+   "caption": "Guac by the fire. Mostly guac.",
+   "scene": "fire",
+   "alt": "Guacamole, fire behind"
   },
   {
    "id": "waterline",
    "src": "49_344294_000023_three-cans-from-the-waterline.jpg",
    "cam": "underwater",
-   "caption": "Three cans from the waterline",
-   "scene": "pool"
+   "caption": "Pool closed. Cans only.",
+   "scene": "pool",
+   "alt": "Three cans from the waterline"
   },
   {
    "id": "sea-point",
    "src": "50_344294_000012_can-vs-sea-point.jpg",
    "cam": "underwater",
-   "caption": "One can against Sea Point",
-   "scene": "sunset"
+   "caption": "View's alright.",
+   "scene": "sunset",
+   "alt": "One can against Sea Point"
   },
   {
    "id": "second-bubble",
    "src": "51_344294_000028_the-second-bubble-burst.jpg",
    "cam": "underwater",
-   "caption": "The second one goes in",
-   "scene": "pool"
+   "caption": "Again, for the camera.",
+   "scene": "pool",
+   "alt": "The second one goes in"
   },
   {
    "id": "corn-shut",
    "src": "52_CHAR_223_corn-eyes-screwed-shut.jpg",
    "cam": "charmera",
    "caption": "Corn, eyes screwed shut",
-   "cast": true
+   "cast": true,
+   "alt": "Corn, eyes screwed shut"
   },
   {
    "id": "mustard-polo",
    "src": "53_334292_000040_mustard-polo-laughing-through-the-leak.jpg",
    "cam": "film",
    "caption": "Laughing through the leak",
-   "cast": true
+   "cast": true,
+   "alt": "Laughing through the leak"
   },
   {
    "id": "behind-fan",
    "src": "55_334293_000036_laughing-behind-the-fan.jpg",
    "cam": "film",
-   "caption": "Laughing behind the fan",
-   "scene": "fire"
+   "caption": "Fan out. Story going.",
+   "scene": "fire",
+   "alt": "Laughing behind the fan"
   },
   {
    "id": "golden-couple",
    "src": "56_CHAR_184_golden-hour-couple.jpg",
    "cam": "charmera",
-   "caption": "Golden hour",
-   "scene": "sunset"
+   "caption": "Five minutes of perfect light.",
+   "scene": "sunset",
+   "alt": "Golden hour"
   },
   {
    "id": "kodak-cheers",
    "src": "57_314295_000038_kodak-cheers.jpg",
    "cam": "film",
    "caption": "Shooting back, cheers",
-   "cast": true
+   "cast": true,
+   "alt": "Shooting back, cheers"
   },
   {
    "id": "red-flag-walk",
    "src": "58_334293_000041_walking-under-the-red-flag.jpg",
    "cam": "film",
-   "caption": "Walking under the red flag",
-   "scene": "arrivals"
+   "caption": "Mid-story. Didn't stop.",
+   "scene": "arrivals",
+   "alt": "Walking under the red flag"
   },
   {
    "id": "branded-glass",
    "src": "59_314291_000023_close-up-with-the-branded-glass.jpg",
    "cam": "film",
-   "caption": "Close up, glass up"
+   "caption": "Close up, glass up",
+   "alt": "Close up, glass up"
   },
   {
    "id": "corn-tray",
    "src": "60_CHAR_232_corn-tray-laugh.jpg",
    "cam": "charmera",
-   "caption": "The corn tray",
-   "scene": "dark"
+   "caption": "Corn arrives. Conversation stops.",
+   "scene": "dark",
+   "alt": "The corn tray"
   },
   {
    "id": "salad-dusk",
    "src": "61_334292_000010_serving-salad-at-dusk.jpg",
    "cam": "film",
-   "caption": "Serving salad at dusk",
-   "scene": "dark"
+   "caption": "Still serving. Nobody helped.",
+   "scene": "dark",
+   "alt": "Serving salad at dusk"
   },
   {
    "id": "knee-leak",
    "src": "62_334292_000033_can-on-knee-under-leak.jpg",
    "cam": "film",
-   "caption": "Can on the knee"
+   "caption": "Can on the knee",
+   "alt": "Can on the knee"
   },
   {
    "id": "guac-pound",
    "src": "63_CHAR_064_pounding-guac-on-camera.jpg",
    "cam": "charmera",
-   "caption": "Pounding the guac, on camera",
-   "scene": "fire"
+   "caption": "Filming the guac like it's a wedding.",
+   "scene": "fire",
+   "alt": "Pounding the guac, on camera"
   },
   {
    "id": "handed-disposable",
    "src": "64_ANDA_026_handed-a-disposable.jpg",
    "cam": "anda",
-   "caption": "Handed a disposable, and the brief",
-   "scene": "arrivals"
+   "caption": "Here's your camera. Don't waste it.",
+   "scene": "arrivals",
+   "alt": "Handed a disposable, and the brief"
   },
   {
    "id": "sideways-two",
    "src": "65_ANDA_001_two-of-them-sideways-drinking.jpg",
    "cam": "anda",
    "caption": "Two of them, sideways",
-   "cast": true
+   "cast": true,
+   "alt": "Two of them, sideways"
   },
   {
    "id": "salt-rim",
    "src": "66_334293_000028_salt-rim-and-chilli-blue-shirt.jpg",
    "cam": "film",
-   "caption": "Salt rim and chilli"
+   "caption": "Salt rim and chilli",
+   "alt": "Salt rim and chilli"
   },
   {
    "id": "atlantic-two",
    "src": "67_334292_000028_two-of-them-against-the-atlantic.jpg",
    "cam": "film",
-   "caption": "Two of them against the Atlantic",
-   "scene": "sunset"
+   "caption": "Same joke. Both laughing.",
+   "scene": "sunset",
+   "alt": "Two of them against the Atlantic"
   },
   {
    "id": "drinks-station",
    "src": "69_334293_000032_the-drinks-station-at-night.jpg",
    "cam": "film",
-   "caption": "The drinks station, after dark",
-   "scene": "dark"
+   "caption": "Someone's thumb. Every roll has one.",
+   "scene": "dark",
+   "alt": "The drinks station, after dark"
   },
   {
    "id": "under-trees",
    "src": "70_314295_000029_low-angle-under-the-trees.jpg",
    "cam": "film",
-   "caption": "Low, under the trees"
+   "caption": "Low, under the trees",
+   "alt": "Low, under the trees"
   },
   {
    "id": "walking-away",
    "src": "71_CHAR_129_walking-away-down-the-terrace.jpg",
    "cam": "charmera",
-   "caption": "Walking away down the terrace",
-   "scene": "dark"
+   "caption": "Dancing all the way to the gate.",
+   "scene": "dark",
+   "alt": "Walking away down the terrace"
   },
   {
    "id": "hand-ice",
    "src": "72_314291_000027_hand-in-the-cooler-ice.jpg",
    "cam": "film",
-   "caption": "Hand in the ice",
-   "scene": "arrivals"
+   "caption": "Reaching in blind.",
+   "scene": "arrivals",
+   "alt": "Hand in the ice"
   },
   {
    "id": "t-lineup",
    "src": "T_BERN_029_three-can-lineup.jpg",
    "cam": "bernard",
-   "caption": "The three in the cooler box"
+   "caption": "The three in the cooler box",
+   "alt": "The three in the cooler box"
   },
   {
    "id": "t-paloma-ice",
    "src": "T_BERN_009_paloma-in-ice-macro.jpg",
    "cam": "bernard",
-   "caption": "Paloma in ice"
+   "caption": "Paloma in ice",
+   "alt": "Paloma in ice"
   },
   {
    "id": "t-pool-coping",
    "src": "T_344294_000022_three-cans-pool-coping.jpg",
    "cam": "underwater",
-   "caption": "Three on the pool coping"
+   "caption": "Three on the pool coping",
+   "alt": "Three on the pool coping"
   },
   {
    "id": "t-held",
    "src": "T_ANDA_040_three-cans-held.jpg",
    "cam": "anda",
-   "caption": "Three, held"
+   "caption": "Three, held",
+   "alt": "Three, held"
   },
   {
    "id": "t-pour",
    "src": "T_BERN_070_styled-pour.jpg",
    "cam": "bernard",
-   "caption": "The Paloma pour"
+   "caption": "The Paloma pour",
+   "alt": "The Paloma pour"
   },
   {
    "id": "can-paloma",
@@ -490,7 +559,8 @@
     0.911
    ],
    "cam": "bernard",
-   "caption": "Paloma"
+   "caption": "Paloma",
+   "alt": "Paloma"
   },
   {
    "id": "can-margarita",
@@ -502,7 +572,8 @@
     0.911
    ],
    "cam": "bernard",
-   "caption": "Margarita"
+   "caption": "Margarita",
+   "alt": "Margarita"
   },
   {
    "id": "can-spicy",
@@ -514,151 +585,171 @@
     0.911
    ],
    "cam": "bernard",
-   "caption": "Spicy Margarita"
+   "caption": "Spicy Margarita",
+   "alt": "Spicy Margarita"
   },
   {
    "id": "l-flags",
    "src": "L001.jpg",
    "cam": "liezl",
    "grade": "film",
-   "caption": "Papel picado over the terrace",
-   "scene": "arrivals"
+   "caption": "Up since nine. Worth it.",
+   "scene": "arrivals",
+   "alt": "Papel picado over the terrace"
   },
   {
    "id": "l-cooler-in",
    "src": "L087.jpg",
    "cam": "liezl",
    "grade": "film",
-   "caption": "The cooler, carried in",
-   "scene": "arrivals"
+   "caption": "Delivery, with a smile.",
+   "scene": "arrivals",
+   "alt": "The cooler, carried in"
   },
   {
    "id": "l-flowers",
    "src": "L084.jpg",
    "cam": "liezl",
    "grade": "film",
-   "caption": "Flowers at the table",
-   "scene": "arrivals"
+   "caption": "Someone brought flowers. Show-off.",
+   "scene": "arrivals",
+   "alt": "Flowers at the table"
   },
   {
    "id": "l-fire-lit",
    "src": "L022.jpg",
    "cam": "liezl",
    "grade": "film",
-   "caption": "The fire, lit",
-   "scene": "fire"
+   "caption": "Fire's going. Eating at six. Maybe seven.",
+   "scene": "fire",
+   "alt": "The fire, lit"
   },
   {
    "id": "l-turning",
    "src": "L092.jpg",
    "cam": "liezl",
    "grade": "film",
-   "caption": "Turning the meat",
-   "scene": "fire"
+   "caption": "Do not touch the tongs.",
+   "scene": "fire",
+   "alt": "Turning the meat"
   },
   {
    "id": "l-skewers",
    "src": "L094.jpg",
    "cam": "liezl",
    "grade": "film",
-   "caption": "Skewers on the grid",
-   "scene": "fire"
+   "caption": "Not ready. Ask again in five.",
+   "scene": "fire",
+   "alt": "Skewers on the grid"
   },
   {
    "id": "l-salad-laugh",
    "src": "L118.jpg",
    "cam": "liezl",
    "grade": "film",
-   "caption": "Salad duty, at sunset",
-   "scene": "sunset"
+   "caption": "Salad duty. Taken very seriously.",
+   "scene": "sunset",
+   "alt": "Salad duty, at sunset"
   },
   {
    "id": "l-toast-above",
    "src": "L128.jpg",
    "cam": "liezl",
    "grade": "film",
-   "caption": "The toast, from above",
-   "scene": "sunset"
+   "caption": "Everyone in. Quickly.",
+   "scene": "sunset",
+   "alt": "The toast, from above"
   },
   {
    "id": "l-paloma-dusk",
    "src": "L145.jpg",
    "cam": "liezl",
    "grade": "film",
-   "caption": "Paloma on the wall, last light",
-   "scene": "sunset"
+   "caption": "Left on the wall. Came back for it.",
+   "scene": "sunset",
+   "alt": "Paloma on the wall, last light"
   },
   {
    "id": "l-passing",
    "src": "L164.jpg",
    "cam": "liezl",
    "grade": "film",
-   "caption": "Passing the skewers",
-   "scene": "dark"
+   "caption": "Sharing is caring. Mostly.",
+   "scene": "dark",
+   "alt": "Passing the skewers"
   },
   {
    "id": "l-paloma-late",
    "src": "L167.jpg",
    "cam": "liezl",
    "grade": "film",
-   "caption": "Paloma, after the sun went",
-   "scene": "dark"
+   "caption": "Sun's gone. Paloma isn't.",
+   "scene": "dark",
+   "alt": "Paloma, after the sun went"
   },
   {
    "id": "l-prints",
    "src": "L107.jpg",
    "cam": "liezl",
    "grade": "film",
-   "caption": "The prints came back"
+   "caption": "Back from the chemist. Worth the wait.",
+   "alt": "The prints came back"
   },
   {
    "id": "l-pour",
    "src": "L111.jpg",
    "cam": "liezl",
    "grade": "film",
-   "caption": "Margarita, over salt"
+   "caption": "Salt rim. Steady hands.",
+   "alt": "Margarita, over salt"
   },
   {
    "id": "l-bottles",
    "src": "L025.jpg",
    "cam": "liezl",
    "grade": "film",
-   "caption": "Fuego Tequila at the drinks table"
+   "caption": "Bottles out. Chillies everywhere.",
+   "alt": "Fuego Tequila at the drinks table"
   },
   {
    "id": "l-bottles-table",
    "src": "L026.jpg",
    "cam": "liezl",
    "grade": "film",
-   "caption": "Bottles, chillies, proteas"
+   "caption": "Proteas, because Cape Town.",
+   "alt": "Bottles, chillies, proteas"
   },
   {
    "id": "l-marg-sea",
    "src": "L006.jpg",
    "cam": "liezl",
    "grade": "film",
-   "caption": "Margarita, Atlantic behind"
+   "caption": "Holding it up for the Atlantic.",
+   "alt": "Margarita, Atlantic behind"
   },
   {
    "id": "l-spicy-ice",
    "src": "L007.jpg",
    "cam": "liezl",
    "grade": "film",
-   "caption": "Spicy, in the ice"
+   "caption": "Iced. Properly.",
+   "alt": "Spicy, in the ice"
   },
   {
    "id": "l-paloma-cooler",
    "src": "L010.jpg",
    "cam": "liezl",
    "grade": "film",
-   "caption": "Paloma by the cooler"
+   "caption": "Paloma by the cooler",
+   "alt": "Paloma by the cooler"
   },
   {
    "id": "l-three-last",
    "src": "L150.jpg",
    "cam": "liezl",
    "grade": "film",
-   "caption": "All three, last light"
+   "caption": "Family photo.",
+   "alt": "All three, last light"
   },
   {
    "id": "can-nonalc",
@@ -671,7 +762,8 @@
     0.09,
     0.425,
     0.905
-   ]
+   ],
+   "alt": "Non-Alc Margarita"
   }
  ],
  "cameras": {
