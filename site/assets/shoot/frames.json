@@ -719,6 +719,206 @@
    "shotOn": "Bernard's phone",
    "w": 886,
    "h": 1280
+  },
+  {
+   "id": "l-flags",
+   "src": "L001.jpg",
+   "caption": "Papel picado over the terrace",
+   "scene": "arrivals",
+   "cast": false,
+   "shotOn": "Liezl's Fuji X100VI",
+   "w": 1280,
+   "h": 853
+  },
+  {
+   "id": "l-cooler-in",
+   "src": "L087.jpg",
+   "caption": "The cooler, carried in",
+   "scene": "arrivals",
+   "cast": false,
+   "shotOn": "Liezl's Fuji X100VI",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "l-flowers",
+   "src": "L084.jpg",
+   "caption": "Flowers at the table",
+   "scene": "arrivals",
+   "cast": false,
+   "shotOn": "Liezl's Fuji X100VI",
+   "w": 1280,
+   "h": 853
+  },
+  {
+   "id": "l-fire-lit",
+   "src": "L022.jpg",
+   "caption": "The fire, lit",
+   "scene": "fire",
+   "cast": false,
+   "shotOn": "Liezl's Fuji X100VI",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "l-turning",
+   "src": "L092.jpg",
+   "caption": "Turning the meat",
+   "scene": "fire",
+   "cast": false,
+   "shotOn": "Liezl's Fuji X100VI",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "l-skewers",
+   "src": "L094.jpg",
+   "caption": "Skewers on the grid",
+   "scene": "fire",
+   "cast": false,
+   "shotOn": "Liezl's Fuji X100VI",
+   "w": 1280,
+   "h": 853
+  },
+  {
+   "id": "l-salad-laugh",
+   "src": "L118.jpg",
+   "caption": "Salad duty, at sunset",
+   "scene": "sunset",
+   "cast": false,
+   "shotOn": "Liezl's Fuji X100VI",
+   "w": 1280,
+   "h": 853
+  },
+  {
+   "id": "l-toast-above",
+   "src": "L128.jpg",
+   "caption": "The toast, from above",
+   "scene": "sunset",
+   "cast": false,
+   "shotOn": "Liezl's Fuji X100VI",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "l-paloma-dusk",
+   "src": "L145.jpg",
+   "caption": "Paloma on the wall, last light",
+   "scene": "sunset",
+   "cast": false,
+   "shotOn": "Liezl's Fuji X100VI",
+   "w": 1280,
+   "h": 853
+  },
+  {
+   "id": "l-passing",
+   "src": "L164.jpg",
+   "caption": "Passing the skewers",
+   "scene": "dark",
+   "cast": false,
+   "shotOn": "Liezl's Fuji X100VI",
+   "w": 1280,
+   "h": 853
+  },
+  {
+   "id": "l-paloma-late",
+   "src": "L167.jpg",
+   "caption": "Paloma, after the sun went",
+   "scene": "dark",
+   "cast": false,
+   "shotOn": "Liezl's Fuji X100VI",
+   "w": 1280,
+   "h": 853
+  },
+  {
+   "id": "l-prints",
+   "src": "L107.jpg",
+   "caption": "The prints came back",
+   "scene": null,
+   "cast": false,
+   "shotOn": "Liezl's Fuji X100VI",
+   "w": 1112,
+   "h": 1280
+  },
+  {
+   "id": "l-pour",
+   "src": "L111.jpg",
+   "caption": "Margarita, over salt",
+   "scene": null,
+   "cast": false,
+   "shotOn": "Liezl's Fuji X100VI",
+   "w": 1280,
+   "h": 853
+  },
+  {
+   "id": "l-bottles",
+   "src": "L025.jpg",
+   "caption": "Fuego Tequila at the drinks table",
+   "scene": null,
+   "cast": false,
+   "shotOn": "Liezl's Fuji X100VI",
+   "w": 1280,
+   "h": 853
+  },
+  {
+   "id": "l-bottles-table",
+   "src": "L026.jpg",
+   "caption": "Bottles, chillies, proteas",
+   "scene": null,
+   "cast": false,
+   "shotOn": "Liezl's Fuji X100VI",
+   "w": 1280,
+   "h": 853
+  },
+  {
+   "id": "l-marg-sea",
+   "src": "L006.jpg",
+   "caption": "Margarita, Atlantic behind",
+   "scene": null,
+   "cast": false,
+   "shotOn": "Liezl's Fuji X100VI",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "l-spicy-ice",
+   "src": "L007.jpg",
+   "caption": "Spicy, in the ice",
+   "scene": null,
+   "cast": false,
+   "shotOn": "Liezl's Fuji X100VI",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "l-paloma-cooler",
+   "src": "L010.jpg",
+   "caption": "Paloma by the cooler",
+   "scene": null,
+   "cast": false,
+   "shotOn": "Liezl's Fuji X100VI",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "l-three-last",
+   "src": "L150.jpg",
+   "caption": "All three, last light",
+   "scene": null,
+   "cast": false,
+   "shotOn": "Liezl's Fuji X100VI",
+   "w": 1280,
+   "h": 853
+  },
+  {
+   "id": "can-nonalc",
+   "src": "L150.jpg",
+   "caption": "Non-Alc Margarita",
+   "scene": null,
+   "cast": false,
+   "shotOn": "Liezl's Fuji X100VI",
+   "w": 620,
+   "h": 1086
   }
  ]
 }

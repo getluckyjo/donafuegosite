@@ -7,14 +7,33 @@ raw holds the Drive originals, named as Drive names them, optionally prefixed
 "A__" or "T__" (how the Composio download saves them). Reads
 tools/shoot-manifest.json, writes site/assets/shoot/<id>-1280.webp and
 <id>-640.webp, and site/assets/shoot/frames.json with sizes and credits.
-EXIF is dropped: no GPS or camera data goes public. Needs Pillow.
+EXIF is dropped: no GPS or camera data goes public. Frames marked
+"grade": "film" (Liezl's digital set) are graded to sit with the film rolls.
+Needs Pillow and numpy.
 """
-import json, os, sys
+import hashlib, json, os, sys
+import numpy as np
 from PIL import Image, ImageOps
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 OUT = os.path.join(ROOT, 'site', 'assets', 'shoot')
 SIZES = {1280: 74, 640: 70}          # long edge -> WebP quality
+
+def film(im, seed):
+    """Grade a clean digital frame toward the disposable rolls: warm mids,
+    a touch less saturation, lifted blacks, a soft highlight knee and fine
+    grain. The seed fixes the grain so rebuilds are byte-identical."""
+    a = np.asarray(im.convert('RGB')).astype(np.float32) / 255.0
+    lum = a @ np.array([0.299, 0.587, 0.114], dtype=np.float32)
+    a = a + (4 * lum * (1 - lum))[..., None] * np.array([0.06, 0.02, -0.07], dtype=np.float32)
+    g = lum[..., None]
+    a = g + (a - g) * 0.96
+    a = 0.03 + a * 0.95
+    hi = a > 0.8
+    a[hi] = 0.8 + (a[hi] - 0.8) * 0.6
+    rng = np.random.default_rng(int(hashlib.md5(seed.encode()).hexdigest()[:8], 16))
+    a = np.clip(a + rng.normal(0, 0.014, a.shape[:2]).astype(np.float32)[..., None], 0, 1)
+    return Image.fromarray((a * 255 + 0.5).astype(np.uint8))
 
 def find(raw, name):
     for cand in (name, 'A__' + name, 'T__' + name):
@@ -35,6 +54,8 @@ def main(raw):
         for edge, q in SIZES.items():
             c = im.copy()
             c.thumbnail((edge, edge), Image.LANCZOS)
+            if f.get('grade') == 'film':
+                c = film(c, f"{f['id']}-{edge}")
             c.save(os.path.join(OUT, f"{f['id']}-{edge}.webp"), 'WEBP', quality=q, method=6)
         w, h = im.size
         scale = 1280 / max(w, h)

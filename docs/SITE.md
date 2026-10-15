@@ -37,7 +37,7 @@ Season 1, Episode 1, "The Braai":
 3. **Five scenes.** Arrivals, The fire, The pool, Sunset, After dark. Prints scattered
    like they came back from the chemist, each with its camera credit.
 4. **What was in the cooler box.** The only product moment: the three cans, cropped
-   from Bernard's clean-can lineup, and the Non-Alc, which wasn't at this braai.
+   from Bernard's clean-can lineup, and the Non-Alc, cropped from Liezl's last-light lineup.
 5. **Episode 2 stars you.** The fan wall.
 6. **End credits.** The footer rolls like credits.
 
@@ -82,8 +82,18 @@ put the first name in `site/index.html` (search for `data-cast="<id>"`).
 | fan-eyes | 19_314295_000027 | | |
 | laugh-glass | 44_CHAR_042 | | |
 
-Camera credits name Bernard, Anda and Shaun as photographers, as the Brand Kit asks.
+Camera credits name Bernard, Anda, Shaun and Liezl as photographers, as the Brand Kit asks.
 Confirm they're happy with that too.
+
+## Liezl's set
+
+Liezl shot the afternoon on a Fuji X100VI: 172 frames in the Google Photos album
+"Dona Fuego - Liezl X100VI" (89 of them are also in Drive). Twenty are on the site, graded
+toward the film rolls by `tools/build-images.py` so the scenes read as one afternoon.
+Her set has hard compliance breaches that must never be used: a red car with its number
+plate and a guest in the driver's seat (L068 to L074, L171, L172), a motorbike delivery and
+cars (L089 to L091, L141), and a round that reads as shots (L063 to L066). The full list
+is in `tools/shoot-manifest.json`.
 
 ## Page map
 
@@ -119,7 +129,7 @@ Each has a placeholder in the build, so nothing blocks review of the draft.
 
 1. **Logo.** Only a red PNG exists (Shopify). Need the vector wordmark or the can-label
    lettering as SVG. The site uses a typed Bevan wordmark until then.
-2. **Non-Alc Margarita photo.** It wasn't at the shoot. Shown as a blank print.
+2. **Non-Alc size.** The can in Liezl's L150 reads 300ml, 0%, "fruit juice cocktail". 0% and the class are on the site; the size is marked to confirm.
 3. **Cast names and consent.** See the table above.
 4. **Fan wall setup.** Service account, Fan Wall folder, three env vars. See above.
 5. **Held-back frames.** Eight frames are out pending an age or background check; the list
