@@ -33,7 +33,7 @@ Season 1, Episode 1, "The Braai":
 
 1. **Cold open.** Disposable prints drop onto a pile, fast, then the title card slams on.
    Silent. Plays once per browser session; Skip and "watch the intro again" are there.
-2. **Starring.** Twelve cast cards, each a print, a first name and one line. Then
+2. **Starring.** Nine cast cards, one per person, each a print, a first name and one line. Then
    "Created by" Danielle, which replaces the old story page.
 3. **Five scenes.** Arrivals, The fire, The pool, Sunset, After dark. Prints scattered
    like they came back from the chemist, each with its camera credit.
@@ -74,11 +74,8 @@ put the first name in `site/index.html` (search for `data-cast="<id>"`).
 | beaming-flag | 17_334293_000042 | | |
 | kodak-cheers | 57_314295_000038 | | |
 | bunting-laugh | 13_CHAR_028 | | |
-| kebab | 26_CHAR_235 | | |
-| corn-shut | 52_CHAR_223 | | |
 | mustard-polo | 53_334292_000040 | | |
 | face-can | 22_CHAR_056 | | |
-| corn-sunburst | 03_314295_000008 | | |
 | couple-cheers (two people) | 30_CHAR_109 | | |
 | fan-eyes | 19_314295_000027 | | |
 | laugh-glass | 44_CHAR_042 | | |

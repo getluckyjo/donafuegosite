@@ -521,3 +521,7 @@ body::after {
 @media (max-width: 900px) { .retail .wrap { grid-template-columns: 1fr; gap: 28px; text-align: center; } .retail-copy p { margin: 0 auto; } }
 @media (max-width: 520px) { .retail { padding: 48px 0; } .retail-logos { gap: 12px; } .retail-tile { padding: 22px 14px 16px; } .retail-tile img { height: 44px; } .retail-tile span { font-size: .7rem; letter-spacing: .14em; } }
 @media (prefers-reduced-motion: reduce) { .retail-tile { transition: none; } }
+
+/* Cast: nine cards, three by three; on phones the odd one out sits centred */
+@media (min-width: 761px) { .cast-grid { grid-template-columns: repeat(3, 1fr); max-width: 1040px; margin-left: auto; margin-right: auto; } }
+@media (max-width: 760px) { .cast-grid > .cast-card:last-child:nth-child(odd) { grid-column: 1 / -1; width: calc(50% - 7px); justify-self: center; } }
