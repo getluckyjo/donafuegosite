@@ -494,3 +494,16 @@ body::after {
 .band-forest .buy-mini { background: var(--cream); color: var(--forest); border-color: var(--cream); }
 .band-forest .buy-mini:hover { background: var(--white); color: var(--forest); }
 .band-forest .buy-mini.off { background: transparent; color: #CBDDBF; border-color: rgba(203,221,191,.4); }
+
+/* ---------- Packshots: the label renders, cut out ---------- */
+.packshot { filter: drop-shadow(0 20px 18px rgba(11, 61, 30, .22)); }
+.band-forest .packshot { filter: drop-shadow(0 22px 20px rgba(0, 0, 0, .38)); }
+.cooler-row .packshot { display: block; height: 340px; width: auto; margin: 0 auto; transition: transform .3s ease; }
+.cooler-row a:hover .packshot, .cooler-row a:focus-visible .packshot { transform: translateY(-6px) rotate(-2deg); }
+.cooler-row .print { max-width: 204px; margin: 0 auto; }
+.can-card .can-img:not(.packshot) { border: 7px solid var(--print); border-radius: 3px; box-shadow: var(--shadow); }
+@media (max-width: 900px) { .cooler-row .packshot { height: 260px; } .cooler-row .print { max-width: 156px; } }
+@media (prefers-reduced-motion: reduce) { .cooler-row .packshot { transition: none; } }
+.can-slot > a.can-card { display: flex; flex: 1; }
+.buy-mini { white-space: nowrap; }
+@media (max-width: 900px) { .cooler-row .buy-verb { display: none; } .cooler-row .buy-mini { padding-left: 14px; padding-right: 14px; } }

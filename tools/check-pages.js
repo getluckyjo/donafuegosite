@@ -58,13 +58,16 @@ for (const file of all) {
     if (!/alt="/.test(m[0])) err(f, `img without alt: ${m[0].slice(0, 80)}`);
     // Shoot frames and approved fan photos only: no renders, no stock, no AI.
     const src = (m[0].match(/\ssrc="([^"]*)"/) || [])[1] || '';
-    if (!src.startsWith('/assets/shoot/') && !src.startsWith('/api/fan-image')) err(f, `image outside the shoot set: ${src}`);
+    if (!/^\/(assets\/(shoot|products)\/|api\/fan-image)/.test(src)) err(f, `image outside the shoot set and packshots: ${src}`);
   }
   for (const m of live.matchAll(/\/assets\/img\/([\w.-]+)/g)) {
     if (!['favicon.svg', 'og.jpg'].includes(m[1])) err(f, `reference to a removed image: /assets/img/${m[1]}`);
   }
   for (const m of live.matchAll(/\/assets\/shoot\/([\w-]+)-(640|1280)\.webp/g)) {
     if (!fs.existsSync(path.join(ROOT, 'assets', 'shoot', `${m[1]}-${m[2]}.webp`))) err(f, `missing shoot frame ${m[1]}-${m[2]}`);
+  }
+  for (const m of live.matchAll(/\/assets\/products\/([\w-]+)-(640|1280)\.webp/g)) {
+    if (!fs.existsSync(path.join(ROOT, 'assets', 'products', `${m[1]}-${m[2]}.webp`))) err(f, `missing packshot ${m[1]}-${m[2]}`);
   }
 
   // Voice

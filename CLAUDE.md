@@ -28,10 +28,12 @@ beyond what Danielle has confirmed for the public.
   match the other two repositories. Change the palette in all three.
 - **Bump `?v=`** in `site/_partials/head.html` (CSS) and `footer.html` (JS) on any CSS/JS
   change, then sync. Assets are cached for a year.
-- **Images**: shoot frames and approved fan photos only. No renders, no stock, no AI.
-  Frames live in `site/assets/shoot/`, built from `tools/shoot-manifest.json` by
-  `tools/build-images.py`; `site/assets/shoot/README.md` says how. The checker fails on
-  anything else.
+- **Images**: shoot frames and approved fan photos, plus the label designer's can renders
+  for product shots only (the cooler box, the range, the can pages). No stock, no AI, no
+  rendered scenes. Frames live in `site/assets/shoot/`, built from
+  `tools/shoot-manifest.json` by `tools/build-images.py`; `site/assets/shoot/README.md`
+  says how. Packshots live in `site/assets/products/`, cut from Labels/Renders by
+  `tools/build-products.py`. The checker fails on anything else.
 - **The idea**: the home page is a sitcom about one Saturday. Cold open (prints dropping on a
   pile), the cast, five scenes, the cooler box, then the fan wall as Episode 2. Keep new
   content inside that frame rather than adding brand-site sections.

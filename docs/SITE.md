@@ -127,6 +127,15 @@ It also writes the `offers` into each can page's Product schema. A can with no p
 (the Non-Alc) shows "Not on Sixty60 yet". The Margarita listing on Checkers showed out of
 stock when the links went in (15 Oct 2026).
 
+## Packshots
+
+The three can renders from Labels/Renders (shared Drive folder, also in
+`getluckyjo/donafuego` under `Dona Distillery /09 Fuego X Johannes/Labels/Renders`) are
+cut out of their white ground by `tools/build-products.py` into
+`site/assets/products/`. They are the product shots on the cooler box, the range and the
+can pages. Everything else is the shoot. The Non-Alc has no render yet, so it uses
+Liezl's photo of the can in a print frame until one arrives.
+
 ## Brand, in one paragraph
 
 Real tequila and real juice in a can, built for the cooler box. Four cans, 250ml, 7%:
@@ -143,7 +152,10 @@ Each has a placeholder in the build, so nothing blocks review of the draft.
 
 1. **Logo.** Only a red PNG exists (Shopify). Need the vector wordmark or the can-label
    lettering as SVG. The site uses a typed Bevan wordmark until then.
-2. **Non-Alc size.** The can in Liezl's L150 reads 300ml, 0%, "fruit juice cocktail". 0% and the class are on the site; the size is marked to confirm.
+2. **Non-Alc render and size.** Ask the label designer for the Non-Alc packshot to match
+   the other three, then add it to `SOURCES` in `tools/build-products.py`. The can in
+   Liezl's L150 reads 300ml, 0%, "fruit juice cocktail". 0% and the class are on the site;
+   the size is marked to confirm.
 3. **Cast names and consent.** See the table above.
 4. **Fan wall setup.** Service account, Fan Wall folder, three env vars. See above.
 5. **Held-back frames.** Eight frames are out pending an age or background check; the list

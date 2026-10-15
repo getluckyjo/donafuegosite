@@ -36,7 +36,7 @@ def mini(slug):
         return '<span class="buy-mini off">Not on Sixty60 yet</span>'
     p, r, u = packs[0]
     return (f'<a class="buy-mini" href="{url(u)}" target="_blank" rel="noopener" data-buy="{slug}:{p}">'
-            f'Order a {p.lower()} · {r}</a>')
+            f'<span class="buy-verb">Order a </span>{p.lower()} · {r}</a>')
 
 def offers(slug):
     return [{'@type': 'Offer', 'name': p, 'price': r.lstrip('R'), 'priceCurrency': 'ZAR', 'url': u,
