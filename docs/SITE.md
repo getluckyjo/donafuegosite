@@ -7,7 +7,8 @@ Last updated 15 October 2026. This is the working document for the consumer site
 
 fuegotequila.co.za is a Shopify Dawn store built for the bottles. The June 2026 UX audit
 found no age gate, no policy pages, thin product pages, no hero CTA and a "Reposade"
-typo. The cans launched nationally in Checkers in August 2026 and are Checkers-exclusive,
+typo. The cans launched nationally in Checkers in August 2026. Checkers is the only retailer
+for them (bars and restaurants can stock them too),
 so the job of the site is not to sell cans. It is to make someone want to be at that
 braai with that can in their hand, and tell them where to get it.
 

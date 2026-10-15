@@ -4,14 +4,17 @@
   "brand_search": "https://www.checkers.co.za/search?Search=dona+fuego&brand=Fuego+Tequila",
   "cans": {
     "margarita": [
-      ["4-pack", "R169.99", "https://www.checkers.co.za/product/fuego-tequila-margarita-spirit-cooler-cans-4-x-250ml-6a47c6d245d9eb0e21424ff4"]
+      ["4-pack", "R169.99", "https://www.checkers.co.za/product/fuego-tequila-margarita-spirit-cooler-cans-4-x-250ml-6a47c6d245d9eb0e21424ff4"],
+      ["Single", "R49.99", "https://www.checkers.co.za/product/fuego-tequila-margarita-spirit-cooler-can-250ml-6a477c2a2386fb2245c1ba1b"]
     ],
     "spicy-margarita": [
       ["4-pack", "R169.99", "https://www.checkers.co.za/product/fuego-tequila-spicy-margarita-spirit-cooler-cans-4-x-250ml-10969425PK1"],
+      ["Single", "R49.99", "https://www.checkers.co.za/product/fuego-tequila-spicy-margarita-spirit-cooler-can-250ml-10969425EA"],
       ["Case of 24", "R969.99", "https://www.checkers.co.za/product/fuego-tequila-spicy-margarita-spirit-cooler-cans-24-x-250ml-10969425PK2"]
     ],
     "paloma": [
       ["4-pack", "R169.99", "https://www.checkers.co.za/product/fuego-tequila-paloma-spirit-cooler-cans-4-x-250ml-10969426PK1"],
+      ["Single", "R49.99", "https://www.checkers.co.za/product/fuego-tequila-paloma-spirit-cooler-can-250ml-10969426EA"],
       ["Case of 24", "R969.99", "https://www.checkers.co.za/product/fuego-tequila-paloma-spirit-cooler-cans-24-x-250ml-10969426PK2"]
     ],
     "non-alc-margarita": []

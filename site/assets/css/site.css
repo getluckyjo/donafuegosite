@@ -525,3 +525,14 @@ body::after {
 /* Cast: nine cards, three by three; on phones the odd one out sits centred */
 @media (min-width: 761px) { .cast-grid { grid-template-columns: repeat(3, 1fr); max-width: 1040px; margin-left: auto; margin-right: auto; } }
 @media (max-width: 760px) { .cast-grid > .cast-card:last-child:nth-child(odd) { grid-column: 1 / -1; width: calc(50% - 7px); justify-self: center; } }
+
+/* ---------- Bottle stockists (tequila page) ---------- */
+.store-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 980px; margin: 0 auto; }
+.store-card { background: var(--cream); color: var(--forest); border-radius: var(--radius); padding: 30px 22px 24px; text-align: center; text-decoration: none; display: flex; flex-direction: column; gap: 6px; box-shadow: 0 10px 24px rgba(0,0,0,.25); transition: transform .15s ease; }
+.store-card:hover, .store-card:focus-visible { transform: translateY(-4px); color: var(--forest); }
+.store-card strong { font-family: var(--font-display); font-weight: 400; text-transform: uppercase; font-size: 1.6rem; line-height: 1; }
+.store-card span { font-size: .9rem; color: var(--ink-soft); }
+.store-card em { font-style: normal; margin-top: 12px; font-family: var(--font-caps); font-weight: 600; font-size: .76rem; letter-spacing: .2em; text-transform: uppercase; color: var(--chilli); }
+@media (max-width: 760px) { .store-row { grid-template-columns: 1fr; max-width: 360px; } }
+@media (prefers-reduced-motion: reduce) { .store-card { transition: none; } }
+.band-forest .store-card, .band-forest .store-card:hover, .store-card strong { color: var(--forest); }
