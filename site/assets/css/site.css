@@ -560,3 +560,4 @@ body::after {
   .scatter .print:has(figcaption)[data-date]::after { bottom: 40px; }
   .scatter .print figcaption { line-height: 1.3; }
 }
+.cast-card .name[hidden] + .line { margin-top: 18px; }

@@ -67,8 +67,9 @@ walkthrough for its own service account.
 
 ## Cast consent
 
-Each cast card says `[First name TBC]`. For each one, find out who it is, ask them, and
-put the first name in `site/index.html` (search for `data-cast="<id>"`).
+Each cast card shows its photo and line with no name. For each one, find out who it is,
+ask them, and once they say yes put the first name in `site/index.html`: find
+`data-cast="<id>"`, type the name inside the tag and delete `hidden`.
 
 | Card | Frame | Name | Said yes |
 |---|---|---|---|
