@@ -131,8 +131,9 @@ The three can renders from Labels/Renders (shared Drive folder, also in
 `getluckyjo/donafuego` under `Dona Distillery /09 Fuego X Johannes/Labels/Renders`) are
 cut out of their white ground by `tools/build-products.py` into
 `site/assets/products/`. They are the product shots on the cooler box, the range and the
-can pages. Everything else is the shoot. The Non-Alc has no render yet, so it uses
-Liezl's photo of the can in a print frame until one arrives.
+can pages. Everything else is the shoot. The Non-Alc render is the new design (lime
+band, cream can), supplied 15 Oct 2026; its source is `renders/non-alc-margarita.jpg` in
+this repo. It differs from the navy-banded can photographed at the braai.
 
 ## Brand, in one paragraph
 
@@ -150,10 +151,12 @@ Each has a placeholder in the build, so nothing blocks review of the draft.
 
 1. **Logo.** Only a red PNG exists (Shopify). Need the vector wordmark or the can-label
    lettering as SVG. The site uses a typed Bevan wordmark until then.
-2. **Non-Alc render and size.** Ask the label designer for the Non-Alc packshot to match
-   the other three, then add it to `SOURCES` in `tools/build-products.py`. The can in
-   Liezl's L150 reads 300ml, 0%, "fruit juice cocktail". 0% and the class are on the site;
-   the size is marked to confirm.
+2. **Non-Alc label wording.** The new-design render says "Tequila" under the logo and
+   "Spirit cooler" on a 0% can. Check both with Danielle before it prints: ARA rules want
+   non-alcoholic variants kept clearly apart from alcohol. The site's spec list says
+   "Fresh juice cocktail, non-alcoholic" and leaves both words out. The render is low
+   resolution (1024 × 1536) with a garbled glyph after "made"; ask the designer for the
+   full-size file.
 3. **Cast names and consent.** See the table above.
 4. **Fan wall setup.** Service account, Fan Wall folder, three env vars. See above.
 5. **Held-back frames.** Eight frames are out pending an age or background check; the list

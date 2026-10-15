@@ -6,7 +6,8 @@
 Reads the label designer's packshots (Labels/Renders in the shared Drive folder,
 "Dona Margarita.png" and so on), finds the can on its white background row by row,
 trims it, and writes transparent WebPs to site/assets/products/<slug>-{640,1280}.webp
-plus products.json with their sizes. Only label renders of the real cans belong here.
+plus products.json with their sizes. The Non-Alc render (the new design, supplied
+15 Oct 2026) lives in renders/ in this repo. Only renders of the real cans belong here.
 Everything else on the site is a shoot frame.
 """
 import json
@@ -22,6 +23,7 @@ SOURCES = {
     "margarita": "Dona Margarita.png",
     "spicy-margarita": "Dona Spicy Margarita.png",
     "paloma": "Dona Paloma.png",
+    "non-alc-margarita": ROOT / "renders" / "non-alc-margarita.jpg",  # kept in this repo
 }
 WIDTHS = (640, 1280)  # names follow the shoot set; the number is the long edge
 EDGE = 248            # darker than this in any channel is can (the lid is nearly white)
@@ -76,7 +78,7 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     meta = {}
     for slug, name in SOURCES.items():
-        can = cut(src / name)
+        can = cut(src / name)  # an absolute path ignores src
         for long_edge in WIDTHS:
             scale = long_edge / max(can.size)
             im = can.resize((round(can.width * scale), round(can.height * scale)), Image.LANCZOS)
