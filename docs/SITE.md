@@ -34,12 +34,13 @@ Season 1, Episode 1, "The Braai":
 
 1. **Cold open.** Disposable prints drop onto a pile, fast, then the title card slams on.
    Silent. Plays once per browser session; Skip and "watch the intro again" are there.
-2. **Starring.** Nine cast cards, one per person, each a print, a first name and one line. Then
+2. **What was in the cooler box.** Straight after the title card: the four cans as
+   packshots with their Sixty60 links, then the "Available nationwide" band with the
+   Checkers LiquorShop and Sixty60 logos. The only product moment.
+3. **Starring.** Nine cast cards, one per person, each a print, a first name and one line. Then
    "Created by" Danielle, which replaces the old story page.
-3. **Five scenes.** Arrivals, The fire, The pool, Sunset, After dark. Prints scattered
+4. **Five scenes.** Arrivals, The fire, The pool, Sunset, After dark. Prints scattered
    like they came back from the chemist, each with its camera credit.
-4. **What was in the cooler box.** The only product moment: the three cans, cropped
-   from Bernard's clean-can lineup, and the Non-Alc, cropped from Liezl's last-light lineup.
 5. **Episode 2 stars you.** The fan wall.
 6. **End credits.** The footer rolls like credits.
 

@@ -37,8 +37,8 @@ beyond what Danielle has confirmed for the public.
   `site/assets/logos/`, used as supplied, on white, only in the `retail` partial. The
   checker fails on anything else.
 - **The idea**: the home page is a sitcom about one Saturday. Cold open (prints dropping on a
-  pile), the cast, five scenes, the cooler box, then the fan wall as Episode 2. Keep new
-  content inside that frame rather than adding brand-site sections.
+  pile), the cooler box and where to get it, the cast, five scenes, then the fan wall as
+  Episode 2. Keep new content inside that frame rather than adding brand-site sections.
 - **Cast names** stay `[First name TBC]` until that guest has said yes. Never guess a name.
 - **Fan wall** shows only what Danielle has put in the Drive Fan Wall folder. Nothing is
   pulled from Instagram automatically, and nothing goes up without the fan's permission.
