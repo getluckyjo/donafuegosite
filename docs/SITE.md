@@ -67,21 +67,22 @@ walkthrough for its own service account.
 
 ## Cast consent
 
-Each cast card shows its photo and line with no name. For each one, find out who it is,
-ask them, and once they say yes put the first name in `site/index.html`: find
-`data-cast="<id>"`, type the name inside the tag and delete `hidden`.
+Every card is named. For a new card, find out who it is and ask them; once they say yes,
+put the first name in `site/index.html`: find `data-cast="<id>"`, type the name inside
+the tag and delete `hidden`, and add them to the Starring line in
+`site/_partials/footer.html`.
 
 | Card | Frame | Name | Said yes |
 |---|---|---|---|
-| flag-face | 39_334293_000031 | | |
-| beaming-flag | 17_334293_000042 | | |
-| kodak-cheers | 57_314295_000038 | | |
-| bunting-laugh | 13_CHAR_028 | | |
-| mustard-polo | 53_334292_000040 | | |
-| face-can | 22_CHAR_056 | | |
-| couple-cheers (two people) | 30_CHAR_109 | | |
-| fan-eyes | 19_314295_000027 | | |
-| laugh-glass | 44_CHAR_042 | | |
+| flag-face | 39_334293_000031 | Phumlani | yes, via Johannes, 16 Oct 2026 |
+| beaming-flag | 17_334293_000042 | Yanga | yes, via Johannes, 16 Oct 2026 |
+| kodak-cheers | 57_314295_000038 | Angelique | yes, via Johannes, 16 Oct 2026 |
+| bunting-laugh | 13_CHAR_028 | Mariette | yes, via Johannes, 16 Oct 2026 |
+| mustard-polo | 53_334292_000040 | Nigel | yes, via Johannes, 16 Oct 2026 |
+| face-can | 22_CHAR_056 | Bernard | yes, via Johannes, 16 Oct 2026 |
+| couple-cheers (two people) | 30_CHAR_109 | Rool (Mariette has her own card) | yes, via Johannes, 16 Oct 2026 |
+| fan-eyes | 19_314295_000027 | Anda | yes, via Johannes, 16 Oct 2026 |
+| laugh-glass | 44_CHAR_042 | Shaun (Danielle is in the background; not named) | yes, via Johannes, 16 Oct 2026 |
 
 Camera credits name Bernard, Anda, Shaun and Liezl as photographers, as the Brand Kit asks.
 Confirm they're happy with that too.
