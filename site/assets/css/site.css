@@ -587,6 +587,5 @@ body::after {
 img[src^="/assets/shoot/"], img[src^="/api/fan-image"] { filter: var(--grade); }
 
 /* ---------- Bottle packshots (tequila page) ---------- */
-.bottle-shot { display: block; height: 260px; width: auto; max-width: 100%; margin: 0 auto 22px; object-fit: contain; }
-.bottle-ph { height: 260px; margin: 0 0 22px; border: 2px dashed var(--line); border-radius: 10px; display: grid; place-items: center; text-align: center; padding: 0 16px; font-size: .9rem; }
-@media (max-width: 860px) { .bottle-shot, .bottle-ph { height: 220px; } }
+.bottle-shot { display: block; height: 280px; width: auto; max-width: 100%; margin: 0 auto 22px; object-fit: contain; }
+@media (max-width: 860px) { .bottle-shot { height: 240px; } }

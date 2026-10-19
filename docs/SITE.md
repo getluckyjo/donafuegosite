@@ -117,7 +117,7 @@ is in `tools/shoot-manifest.json`.
 | `/find-us` | `site/find-us.html` | drafted; Sixty60 buy blocks live, store list to come |
 | `/story` | redirect to `/#created-by` | done |
 | `/serves` | `site/serves.html` | drafted |
-| `/tequila` | `site/tequila.html` | drafted; bottle shots, specs and prices TBC |
+| `/tequila` | `site/tequila.html` | drafted; bottle specs and prices TBC |
 | `/contact` | `site/contact.html` | drafted; addresses TBC |
 | `/legal/terms` `/legal/privacy` | `site/legal/*.html` | drafted for attorney review |
 | `/404` | `site/404.html` | done |
@@ -149,10 +149,9 @@ band, cream can), supplied 15 Oct 2026; its source is `renders/non-alc-margarita
 this repo. It differs from the navy-banded can photographed at the braai.
 
 The 750ml bottle shots on `/tequila` (Blanco, Jalapeño, Reposado) come from the Fuego
-Tequila shop's product pages, saved into `renders/` as the shop names them (`blanco.png`,
-`jalapeno-1.png`, `reposado-1.png`). `python3 tools/build-products.py --bottles` trims
-them into `site/assets/products/`. A shot on white stays on white, which is what the
-bottle cards are. Until they are in, each card shows a marked placeholder.
+Tequila shop's product pages, kept in `renders/` as the shop names them (`blanco.webp`,
+`jalapeno-1.webp`, `reposado-1.webp`, transparent, 2000px). `python3
+tools/build-products.py --bottles` trims them into `site/assets/products/`.
 
 ## Brand, in one paragraph
 
@@ -183,9 +182,8 @@ Each has a placeholder in the build, so nothing blocks review of the draft.
 6. **Facts to confirm with Danielle.** Store count for public use; Sixty60 prices in `tools/shop.json`;
    can size (Brand Kit 250ml, Shopify listing says 300ml); Non-Alc
    ABV and on-pack class; launch wording. Every one is marked `tbc` in the pages.
-7. **Bottle specs and shots.** The three 750ml bottle shots (see Packshots), and ABV,
-   size, tasting notes and current prices for Blanco, Jalapeño and Reposado. Fix the
-   "reposade" product URL in Shopify and add a redirect.
+7. **Bottle specs.** ABV, size, tasting notes and current prices for Blanco, Jalapeño and
+   Reposado. Fix the "reposade" product URL in Shopify and add a redirect.
 8. **Contact details.** hello@ and press@ on donafuego.co.za (or whichever addresses are
    real), phone, street address for the footer and the Organization schema.
 9. **Social.** Keep @drink_fuego_tequila or move to a Doña Fuego handle. TikTok yes or no.

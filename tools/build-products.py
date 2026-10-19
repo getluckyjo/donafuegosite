@@ -10,7 +10,7 @@ Reads the label designer's packshots (Labels/Renders in the shared Drive folder,
 trims it, and writes transparent WebPs to site/assets/products/<slug>-{640,1280}.webp
 plus products.json with their sizes. The Non-Alc render (the new design, supplied
 15 Oct 2026) lives in renders/ in this repo. So do the bottle shots, saved from the
-Fuego Tequila shop's product pages (blanco.png, jalapeno-1.png, reposado-1.png).
+Fuego Tequila shop's product pages (blanco.webp, jalapeno-1.webp, reposado-1.webp).
 Only the real cans and bottles belong here. Everything else on the site is a shoot frame.
 """
 import json
@@ -30,9 +30,9 @@ SOURCES = {
 }
 # Bottle shots: the first name found in renders/ wins (the shop's file names work as saved)
 BOTTLES = {
-    "blanco": ("blanco.png", "blanco.jpg"),
-    "jalapeno": ("jalapeno.png", "jalapeno-1.png", "jalapeno.jpg"),
-    "reposado": ("reposado.png", "reposado-1.png", "reposado.jpg"),
+    "blanco": ("blanco.webp", "blanco.png"),
+    "jalapeno": ("jalapeno-1.webp", "jalapeno-1.png"),
+    "reposado": ("reposado-1.webp", "reposado-1.png"),
 }
 WIDTHS = (640, 1280)  # names follow the shoot set; the number is the long edge
 EDGE = 248            # darker than this in any channel is can (the lid is nearly white)
@@ -89,10 +89,13 @@ def trim(path):
     alpha = np.asarray(rgba)[..., 3]
     if alpha.min() < 250:
         im = rgba
-        ys, xs = np.where(alpha > 8)
+        mask = alpha > 8
     else:
         im = im.convert("RGB")
-        ys, xs = np.where(np.asarray(im).min(axis=2) < 245)
+        mask = np.asarray(im).min(axis=2) < 245
+    # Erode first, so stray specks on the ground do not stretch the box
+    mask = np.asarray(Image.fromarray(mask.astype(np.uint8) * 255).filter(ImageFilter.MinFilter(5))) > 0
+    ys, xs = np.where(mask)
     pad = round(0.02 * max(im.size))
     return im.crop((max(xs.min() - pad, 0), max(ys.min() - pad, 0),
                     min(xs.max() + 1 + pad, im.width), min(ys.max() + 1 + pad, im.height)))

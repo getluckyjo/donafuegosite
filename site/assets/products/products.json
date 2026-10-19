@@ -14,5 +14,17 @@
  "non-alc-margarita": {
   "width": 465,
   "height": 1280
+ },
+ "blanco": {
+  "width": 384,
+  "height": 1280
+ },
+ "jalapeno": {
+  "width": 375,
+  "height": 1280
+ },
+ "reposado": {
+  "width": 376,
+  "height": 1280
  }
 }
