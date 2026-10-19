@@ -29,16 +29,19 @@ beyond what Danielle has confirmed for the public.
 - **Bump `?v=`** in `site/_partials/head.html` (CSS) and `footer.html` (JS) on any CSS/JS
   change, then sync. Assets are cached for a year.
 - **Images**: shoot frames and approved fan photos, plus the label designer's can renders
-  for product shots only (the cooler box, the range, the can pages). No stock, no AI, no
-  rendered scenes. Frames live in `site/assets/shoot/`, built from
-  `tools/shoot-manifest.json` by `tools/build-images.py`; `site/assets/shoot/README.md`
-  says how. Packshots live in `site/assets/products/`, cut from Labels/Renders by
-  `tools/build-products.py`. Retailer logos (Checkers LiquorShop, Checkers Sixty60) live in
-  `site/assets/logos/`, used as supplied, on white, only in the `retail` partial. The
-  checker fails on anything else.
-- **The idea**: the home page is a sitcom about one Saturday. Cold open (prints dropping on a
-  pile), the cooler box and where to get it, the cast, five scenes, then the fan wall as
-  Episode 2. Keep new content inside that frame rather than adding brand-site sections.
+  for product shots only (the cooler box, the range, the can pages) and the Fuego Tequila
+  shop's 750ml bottle shots on `/tequila`. No stock, no AI, no rendered scenes. Frames
+  live in `site/assets/shoot/`, built from `tools/shoot-manifest.json` by
+  `tools/build-images.py`; `site/assets/shoot/README.md` says how. Every shoot frame and
+  fan photo carries one house grade (`--grade` in `site.css`) so the site reads as one
+  roll. Packshots live in `site/assets/products/`, cut from Labels/Renders (bottles from
+  `renders/`) by `tools/build-products.py`. Retailer logos (Checkers LiquorShop, Checkers
+  Sixty60) live in `site/assets/logos/`, used as supplied, on white, only in the `retail`
+  partial. The checker fails on anything else.
+- **The idea**: the home page is a sitcom that starts with one Saturday. Cold open (prints
+  dropping on a pile), the cooler box, what's in the can, where to get it, the cast, then
+  Episode 2 (the fan wall: you could be in the next one), then three scenes of 6 to 8 prints
+  each. Keep new content inside that frame rather than adding brand-site sections.
 - **Cast names** stay off the page until that guest has said yes: the card keeps an empty,
   hidden `<p class="name" data-cast="<id>" hidden>`. Never guess a name.
 - **Fan wall** shows only what Danielle has put in the Drive Fan Wall folder. Nothing is

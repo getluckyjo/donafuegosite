@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
-"""Cut the can label renders out of their white ground for the product slots.
+"""Cut the can label renders out of their white ground for the product slots,
+and trim the 750ml bottle shots for the tequila page.
 
-    python3 tools/build-products.py "<folder with the renders>"
+    python3 tools/build-products.py "<folder with the renders>"   # cans and bottles
+    python3 tools/build-products.py --bottles                      # bottles only
 
 Reads the label designer's packshots (Labels/Renders in the shared Drive folder,
 "Dona Margarita.png" and so on), finds the can on its white background row by row,
 trims it, and writes transparent WebPs to site/assets/products/<slug>-{640,1280}.webp
 plus products.json with their sizes. The Non-Alc render (the new design, supplied
-15 Oct 2026) lives in renders/ in this repo. Only renders of the real cans belong here.
-Everything else on the site is a shoot frame.
+15 Oct 2026) lives in renders/ in this repo. So do the bottle shots, saved from the
+Fuego Tequila shop's product pages (blanco.png, jalapeno-1.png, reposado-1.png).
+Only the real cans and bottles belong here. Everything else on the site is a shoot frame.
 """
 import json
 import sys
@@ -24,6 +27,12 @@ SOURCES = {
     "spicy-margarita": "Dona Spicy Margarita.png",
     "paloma": "Dona Paloma.png",
     "non-alc-margarita": ROOT / "renders" / "non-alc-margarita.jpg",  # kept in this repo
+}
+# Bottle shots: the first name found in renders/ wins (the shop's file names work as saved)
+BOTTLES = {
+    "blanco": ("blanco.png", "blanco.jpg"),
+    "jalapeno": ("jalapeno.png", "jalapeno-1.png", "jalapeno.jpg"),
+    "reposado": ("reposado.png", "reposado-1.png", "reposado.jpg"),
 }
 WIDTHS = (640, 1280)  # names follow the shoot set; the number is the long edge
 EDGE = 248            # darker than this in any channel is can (the lid is nearly white)
@@ -71,21 +80,50 @@ def cut(path):
     return rgba.crop(m.getbbox())
 
 
+def trim(path):
+    """A bottle shot keeps its own ground. Transparent: trimmed to the bottle. On white:
+    trimmed to the bottle and left on white, which is what the bottle cards are (clear
+    glass does not cut cleanly off a white ground)."""
+    im = Image.open(path)
+    rgba = im.convert("RGBA")
+    alpha = np.asarray(rgba)[..., 3]
+    if alpha.min() < 250:
+        im = rgba
+        ys, xs = np.where(alpha > 8)
+    else:
+        im = im.convert("RGB")
+        ys, xs = np.where(np.asarray(im).min(axis=2) < 245)
+    pad = round(0.02 * max(im.size))
+    return im.crop((max(xs.min() - pad, 0), max(ys.min() - pad, 0),
+                    min(xs.max() + 1 + pad, im.width), min(ys.max() + 1 + pad, im.height)))
+
+
+def save(slug, shot, meta):
+    for long_edge in WIDTHS:
+        scale = long_edge / max(shot.size)
+        im = shot.resize((round(shot.width * scale), round(shot.height * scale)), Image.LANCZOS)
+        im.save(OUT / f"{slug}-{long_edge}.webp", "WEBP", quality=86, method=6)
+    meta[slug] = {"width": im.width, "height": im.height}
+    print(f"{slug}: {im.width}x{im.height}")
+
+
 def main():
     if len(sys.argv) != 2:
         sys.exit(__doc__)
-    src = Path(sys.argv[1])
     OUT.mkdir(parents=True, exist_ok=True)
-    meta = {}
-    for slug, name in SOURCES.items():
-        can = cut(src / name)  # an absolute path ignores src
-        for long_edge in WIDTHS:
-            scale = long_edge / max(can.size)
-            im = can.resize((round(can.width * scale), round(can.height * scale)), Image.LANCZOS)
-            im.save(OUT / f"{slug}-{long_edge}.webp", "WEBP", quality=86, method=6)
-        meta[slug] = {"width": im.width, "height": im.height}
-        print(f"{slug}: {im.width}x{im.height}")
-    (OUT / "products.json").write_text(json.dumps(meta, indent=1) + "\n")
+    meta_path = OUT / "products.json"
+    meta = json.loads(meta_path.read_text()) if meta_path.exists() else {}
+    if sys.argv[1] != "--bottles":
+        src = Path(sys.argv[1])
+        for slug, name in SOURCES.items():
+            save(slug, cut(src / name), meta)  # an absolute path ignores src
+    for slug, names in BOTTLES.items():
+        found = [ROOT / "renders" / n for n in names if (ROOT / "renders" / n).exists()]
+        if found:
+            save(slug, trim(found[0]), meta)
+        else:
+            print(f"{slug}: no bottle shot in renders/ yet ({names[0]})")
+    meta_path.write_text(json.dumps(meta, indent=1) + "\n")
 
 
 if __name__ == "__main__":

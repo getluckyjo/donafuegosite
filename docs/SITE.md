@@ -1,6 +1,6 @@
 # donafuego.co.za — plan, page map and what is still needed
 
-Last updated 15 October 2026. This is the working document for the consumer site.
+Last updated 19 October 2026. This is the working document for the consumer site.
 `CLAUDE.md` has the rules; this file has the state.
 
 ## Why
@@ -34,18 +34,28 @@ Season 1, Episode 1, "The Braai":
 
 1. **Cold open.** Disposable prints drop onto a pile, fast, then the title card slams on.
    Silent. Plays once per browser session; Skip and "watch the intro again" are there.
+   Twelve prints, so the title lands in about four seconds. Its buttons: "Be in Episode 2"
+   and Order on Sixty60.
 2. **What was in the cooler box.** Straight after the title card: the four cans as
-   packshots with their Sixty60 links, then the "Available nationwide" band with the
-   Checkers LiquorShop and Sixty60 logos. The only product moment.
-3. **Starring.** Nine cast cards, one per person, each a print, a first name and one line. Then
+   packshots with their Sixty60 links.
+3. **What's in the can.** Three squares: the tequila (Jalisco, Mexico), the juice (lemon
+   and lime, grapefruit in the Paloma), made in Cape Town. Danielle's biggest selling
+   point, so it gets its own beat. Then the "Available nationwide" band with the Checkers
+   LiquorShop and Sixty60 logos.
+4. **Starring.** Nine cast cards, one per person, each a print, a first name and one line. Then
    "Created by" Danielle, which replaces the old story page.
-4. **Five scenes.** Arrivals, The fire, The pool, Sunset, After dark. Prints scattered
-   like they came back from the chemist, each with its camera credit.
-5. **Episode 2 stars you.** The fan wall.
-6. **End credits.** The footer rolls like credits.
+5. **Episode 2 stars you.** The fan wall, straight after the cast: the part that tells a
+   new visitor they could be in the next one.
+6. **Three scenes.** Arrivals (7 prints), The fire and the pool (8), Sundown (8). Prints
+   scattered like they came back from the chemist, each with its camera credit. The best
+   of the roll, not all of it, so the page is about the people and the cans more than one
+   afternoon.
+7. **End credits.** The footer rolls like credits.
 
 Retro comes from treatment, not new colours: white-bordered prints, orange film date
-stamps, film grain, Bevan title cards with a chilli offset shadow.
+stamps, film grain, one warm house grade on every photo (`--grade` in `site.css`; tune it
+there to sit with the Instagram grid), Bevan title cards with a chilli offset shadow on
+cream lettering. Green headings carry no red.
 
 ## The fan wall: how Danielle runs it
 
@@ -101,13 +111,13 @@ is in `tools/shoot-manifest.json`.
 
 | URL | File | Status |
 |---|---|---|
-| `/` | `site/index.html` | the episode: cold open, cast, scenes, cooler box, fan wall |
+| `/` | `site/index.html` | the episode: cold open, cooler box, what's in the can, cast, fan wall, three scenes |
 | `/cans` | `site/cans.html` | drafted |
 | `/cans/margarita` `/cans/spicy-margarita` `/cans/paloma` `/cans/non-alc-margarita` | `site/cans/*.html` | drafted; Non-Alc specs TBC |
 | `/find-us` | `site/find-us.html` | drafted; Sixty60 buy blocks live, store list to come |
 | `/story` | redirect to `/#created-by` | done |
 | `/serves` | `site/serves.html` | drafted |
-| `/tequila` | `site/tequila.html` | drafted; bottle specs and prices TBC |
+| `/tequila` | `site/tequila.html` | drafted; bottle shots, specs and prices TBC |
 | `/contact` | `site/contact.html` | drafted; addresses TBC |
 | `/legal/terms` `/legal/privacy` | `site/legal/*.html` | drafted for attorney review |
 | `/404` | `site/404.html` | done |
@@ -138,6 +148,12 @@ can pages. Everything else is the shoot. The Non-Alc render is the new design (l
 band, cream can), supplied 15 Oct 2026; its source is `renders/non-alc-margarita.jpg` in
 this repo. It differs from the navy-banded can photographed at the braai.
 
+The 750ml bottle shots on `/tequila` (Blanco, Jalapeño, Reposado) come from the Fuego
+Tequila shop's product pages, saved into `renders/` as the shop names them (`blanco.png`,
+`jalapeno-1.png`, `reposado-1.png`). `python3 tools/build-products.py --bottles` trims
+them into `site/assets/products/`. A shot on white stays on white, which is what the
+bottle cards are. Until they are in, each card shows a marked placeholder.
+
 ## Brand, in one paragraph
 
 Real tequila and real juice in a can, built for the cooler box. Four cans, 250ml, 7%:
@@ -167,8 +183,9 @@ Each has a placeholder in the build, so nothing blocks review of the draft.
 6. **Facts to confirm with Danielle.** Store count for public use; Sixty60 prices in `tools/shop.json`;
    can size (Brand Kit 250ml, Shopify listing says 300ml); Non-Alc
    ABV and on-pack class; launch wording. Every one is marked `tbc` in the pages.
-7. **Bottle specs.** ABV, size, tasting notes and current prices for Blanco, Jalapeño and
-   Reposado. Fix the "reposade" product URL in Shopify and add a redirect.
+7. **Bottle specs and shots.** The three 750ml bottle shots (see Packshots), and ABV,
+   size, tasting notes and current prices for Blanco, Jalapeño and Reposado. Fix the
+   "reposade" product URL in Shopify and add a redirect.
 8. **Contact details.** hello@ and press@ on donafuego.co.za (or whichever addresses are
    real), phone, street address for the footer and the Organization schema.
 9. **Social.** Keep @drink_fuego_tequila or move to a Doña Fuego handle. TikTok yes or no.

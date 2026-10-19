@@ -26,7 +26,7 @@
    "src": "02_314291_000032_paloma-shoved-at-the-lens.jpg",
    "cam": "film",
    "caption": "Paloma, straight at the lens",
-   "scene": "sunset",
+   "scene": null,
    "alt": "Paloma, straight at the lens"
   },
   {
@@ -42,7 +42,7 @@
    "src": "04_CHAR_157_grin-over-the-grid.jpg",
    "cam": "charmera",
    "caption": "Who gave them the camera.",
-   "scene": "fire",
+   "scene": "afternoon",
    "alt": "Grinning over the grid"
   },
   {
@@ -73,7 +73,7 @@
    "src": "08_344294_000026_sinking-long-bubble-trail.jpg",
    "cam": "underwater",
    "caption": "And down it goes.",
-   "scene": "pool",
+   "scene": "afternoon",
    "alt": "Going down"
   },
   {
@@ -81,7 +81,7 @@
    "src": "09_344294_000029_can-at-rest-on-the-pool-floor.jpg",
    "cam": "underwater",
    "caption": "It's fine. It's sealed.",
-   "scene": "pool",
+   "scene": "afternoon",
    "alt": "At rest on the pool floor"
   },
   {
@@ -89,7 +89,7 @@
    "src": "10_344294_000031_can-at-the-surface-with-reflection.jpg",
    "cam": "underwater",
    "caption": "Coming up for air.",
-   "scene": "pool",
+   "scene": null,
    "alt": "Back up for air"
   },
   {
@@ -104,7 +104,7 @@
    "src": "12_334292_000025_pov-own-lap-open-paloma.jpg",
    "cam": "film",
    "caption": "View from my lap.",
-   "scene": "sunset",
+   "scene": null,
    "alt": "My lap, my Paloma"
   },
   {
@@ -120,7 +120,7 @@
    "src": "14_334293_000029_two-margaritas-shadow-across-frame.jpg",
    "cam": "film",
    "caption": "Cheers, plus a thumb.",
-   "scene": "dark",
+   "scene": null,
    "alt": "Two margaritas and a thumb"
   },
   {
@@ -128,7 +128,7 @@
    "src": "15_BERN_127_the-sunset-toast.jpg",
    "cam": "bernard",
    "caption": "Everyone stood up for this one.",
-   "scene": "sunset",
+   "scene": "sundown",
    "alt": "The sunset toast"
   },
   {
@@ -151,7 +151,7 @@
    "src": "18_CHAR_124_chips-and-two-chillies.jpg",
    "cam": "charmera",
    "caption": "Two chillies. One dare.",
-   "scene": "fire",
+   "scene": "afternoon",
    "alt": "Chips and two chillies"
   },
   {
@@ -174,7 +174,7 @@
    "src": "21_334292_000001_the-toast.jpg",
    "cam": "film",
    "caption": "Glasses up before the food got cold.",
-   "scene": "dark",
+   "scene": "sundown",
    "alt": "The toast"
   },
   {
@@ -190,7 +190,7 @@
    "src": "23_CHAR_156_cackling-over-the-grid.jpg",
    "cam": "charmera",
    "caption": "Supposed to be watching the meat.",
-   "scene": "fire",
+   "scene": "afternoon",
    "alt": "Cackling over the grid"
   },
   {
@@ -198,7 +198,7 @@
    "src": "24_314291_000010_orange-leak-half-the-frame.jpg",
    "cam": "film",
    "caption": "The light leak ate half of this one.",
-   "scene": "sunset",
+   "scene": null,
    "alt": "Half the frame lost to a light leak"
   },
   {
@@ -222,7 +222,7 @@
    "src": "27_344294_000010_two-cans-clinked-at-sunset.jpg",
    "cam": "underwater",
    "caption": "Clink. Sun's going.",
-   "scene": "sunset",
+   "scene": "sundown",
    "alt": "Two cans, clinked"
   },
   {
@@ -230,7 +230,7 @@
    "src": "28_344294_000014_lying-back-laughing.jpg",
    "cam": "underwater",
    "caption": "Couch claimed.",
-   "scene": "pool",
+   "scene": null,
    "alt": "Lying back, laughing"
   },
   {
@@ -253,7 +253,7 @@
    "src": "32_BERN_122_reaching-across-the-table.jpg",
    "cam": "bernard",
    "caption": "Pass the corn. No, the other corn.",
-   "scene": "sunset",
+   "scene": null,
    "alt": "Reaching across the table"
   },
   {
@@ -284,7 +284,7 @@
    "src": "36_344294_000024_the-bubble-burst.jpg",
    "cam": "underwater",
    "caption": "Bubbles.",
-   "scene": "pool",
+   "scene": null,
    "alt": "The bubble burst"
   },
   {
@@ -307,7 +307,7 @@
    "src": "40_CHAR_216_three-at-the-wall-at-sunset.jpg",
    "cam": "charmera",
    "caption": "Album cover, take one.",
-   "scene": "sunset",
+   "scene": null,
    "alt": "Three at the wall"
   },
   {
@@ -323,7 +323,7 @@
    "src": "46_334292_000009_paloma-on-the-pink-plate.jpg",
    "cam": "film",
    "caption": "Someone matched the can to the plate.",
-   "scene": "dark",
+   "scene": "sundown",
    "alt": "Paloma on the pink plate"
   },
   {
@@ -331,7 +331,7 @@
    "src": "47_334292_000041_glass-held-up-blurred.jpg",
    "cam": "film",
    "caption": "Too fast for the camera.",
-   "scene": "dark",
+   "scene": null,
    "alt": "Glass up, blurred"
   },
   {
@@ -339,7 +339,7 @@
    "src": "48_CHAR_061_guacamole-with-the-fire-behind.jpg",
    "cam": "charmera",
    "caption": "Guac by the fire. Mostly guac.",
-   "scene": "fire",
+   "scene": null,
    "alt": "Guacamole, fire behind"
   },
   {
@@ -347,7 +347,7 @@
    "src": "49_344294_000023_three-cans-from-the-waterline.jpg",
    "cam": "underwater",
    "caption": "Pool closed. Cans only.",
-   "scene": "pool",
+   "scene": "afternoon",
    "alt": "Three cans from the waterline"
   },
   {
@@ -355,7 +355,7 @@
    "src": "50_344294_000012_can-vs-sea-point.jpg",
    "cam": "underwater",
    "caption": "View's alright.",
-   "scene": "sunset",
+   "scene": "sundown",
    "alt": "One can against Sea Point"
   },
   {
@@ -363,7 +363,7 @@
    "src": "51_344294_000028_the-second-bubble-burst.jpg",
    "cam": "underwater",
    "caption": "Again, for the camera.",
-   "scene": "pool",
+   "scene": null,
    "alt": "The second one goes in"
   },
   {
@@ -387,7 +387,7 @@
    "src": "55_334293_000036_laughing-behind-the-fan.jpg",
    "cam": "film",
    "caption": "Fan out. Story going.",
-   "scene": "fire",
+   "scene": null,
    "alt": "Laughing behind the fan"
   },
   {
@@ -395,7 +395,7 @@
    "src": "56_CHAR_184_golden-hour-couple.jpg",
    "cam": "charmera",
    "caption": "Five minutes of perfect light.",
-   "scene": "sunset",
+   "scene": "sundown",
    "alt": "Golden hour"
   },
   {
@@ -411,7 +411,7 @@
    "src": "58_334293_000041_walking-under-the-red-flag.jpg",
    "cam": "film",
    "caption": "Mid-story. Didn't stop.",
-   "scene": "arrivals",
+   "scene": null,
    "alt": "Walking under the red flag"
   },
   {
@@ -426,7 +426,7 @@
    "src": "60_CHAR_232_corn-tray-laugh.jpg",
    "cam": "charmera",
    "caption": "Corn arrives. Conversation stops.",
-   "scene": "dark",
+   "scene": null,
    "alt": "The corn tray"
   },
   {
@@ -434,7 +434,7 @@
    "src": "61_334292_000010_serving-salad-at-dusk.jpg",
    "cam": "film",
    "caption": "Still serving. Nobody helped.",
-   "scene": "dark",
+   "scene": null,
    "alt": "Serving salad at dusk"
   },
   {
@@ -449,7 +449,7 @@
    "src": "63_CHAR_064_pounding-guac-on-camera.jpg",
    "cam": "charmera",
    "caption": "Filming the guac like it's a wedding.",
-   "scene": "fire",
+   "scene": "afternoon",
    "alt": "Pounding the guac, on camera"
   },
   {
@@ -457,7 +457,7 @@
    "src": "64_ANDA_026_handed-a-disposable.jpg",
    "cam": "anda",
    "caption": "Here's your camera. Don't waste it.",
-   "scene": "arrivals",
+   "scene": null,
    "alt": "Handed a disposable, and the brief"
   },
   {
@@ -480,7 +480,7 @@
    "src": "67_334292_000028_two-of-them-against-the-atlantic.jpg",
    "cam": "film",
    "caption": "Same joke. Both laughing.",
-   "scene": "sunset",
+   "scene": null,
    "alt": "Two of them against the Atlantic"
   },
   {
@@ -488,7 +488,7 @@
    "src": "69_334293_000032_the-drinks-station-at-night.jpg",
    "cam": "film",
    "caption": "Someone's thumb. Every roll has one.",
-   "scene": "dark",
+   "scene": null,
    "alt": "The drinks station, after dark"
   },
   {
@@ -503,7 +503,7 @@
    "src": "71_CHAR_129_walking-away-down-the-terrace.jpg",
    "cam": "charmera",
    "caption": "Dancing all the way to the gate.",
-   "scene": "dark",
+   "scene": "sundown",
    "alt": "Walking away down the terrace"
   },
   {
@@ -594,7 +594,7 @@
    "cam": "liezl",
    "grade": "film",
    "caption": "Up since nine. Worth it.",
-   "scene": "arrivals",
+   "scene": null,
    "alt": "Papel picado over the terrace"
   },
   {
@@ -612,7 +612,7 @@
    "cam": "liezl",
    "grade": "film",
    "caption": "Someone brought flowers. Show-off.",
-   "scene": "arrivals",
+   "scene": null,
    "alt": "Flowers at the table"
   },
   {
@@ -621,7 +621,7 @@
    "cam": "liezl",
    "grade": "film",
    "caption": "Fire's going. Eating at six. Maybe seven.",
-   "scene": "fire",
+   "scene": "afternoon",
    "alt": "The fire, lit"
   },
   {
@@ -630,7 +630,7 @@
    "cam": "liezl",
    "grade": "film",
    "caption": "Do not touch the tongs.",
-   "scene": "fire",
+   "scene": null,
    "alt": "Turning the meat"
   },
   {
@@ -639,7 +639,7 @@
    "cam": "liezl",
    "grade": "film",
    "caption": "Not ready. Ask again in five.",
-   "scene": "fire",
+   "scene": null,
    "alt": "Skewers on the grid"
   },
   {
@@ -648,7 +648,7 @@
    "cam": "liezl",
    "grade": "film",
    "caption": "Salad duty. Taken very seriously.",
-   "scene": "sunset",
+   "scene": null,
    "alt": "Salad duty, at sunset"
   },
   {
@@ -657,7 +657,7 @@
    "cam": "liezl",
    "grade": "film",
    "caption": "Everyone in. Quickly.",
-   "scene": "sunset",
+   "scene": null,
    "alt": "The toast, from above"
   },
   {
@@ -666,7 +666,7 @@
    "cam": "liezl",
    "grade": "film",
    "caption": "Left on the wall. Came back for it.",
-   "scene": "sunset",
+   "scene": "sundown",
    "alt": "Paloma on the wall, last light"
   },
   {
@@ -675,7 +675,7 @@
    "cam": "liezl",
    "grade": "film",
    "caption": "Sharing is caring. Mostly.",
-   "scene": "dark",
+   "scene": null,
    "alt": "Passing the skewers"
   },
   {
@@ -684,7 +684,7 @@
    "cam": "liezl",
    "grade": "film",
    "caption": "Sun's gone. Paloma isn't.",
-   "scene": "dark",
+   "scene": null,
    "alt": "Paloma, after the sun went"
   },
   {
