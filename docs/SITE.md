@@ -199,8 +199,13 @@ Each has a placeholder in the build, so nothing blocks review of the draft.
     with the Checkers buyer that brand use is fine under the trading terms. Check the links
     in `tools/shop.json` against the ones Danielle emailed, and add the Non-Alc once
     Checkers lists it.
-14. **Analytics.** Recommend Vercel Web Analytics or Plausible (no cookies, no banner).
-    Name it in the privacy page when added.
+14. **Analytics.** Google Analytics 4 is wired into `site/_partials/head.html`. Create the
+    property (donafuego.co.za, South Africa, ZAR) in Google Analytics, paste its Measurement
+    ID over `G-XXXXXXXXXX` in the partial, run `node tools/sync-partials.js`, and it is on.
+    The tag stays off until then and on localhost. Sign-ups and contact messages arrive as
+    `sign_up` and `generate_lead` events; retailer and shop clicks come through enhanced
+    measurement's outbound clicks, which is on by default. The privacy page names Google
+    Analytics and its cookies; it needs the attorney's eye like the rest of that page.
 15. **Final copy.** Drafts are in brand voice. Clarissa or Danielle sign off before launch.
 
 ## Later, once the above is in

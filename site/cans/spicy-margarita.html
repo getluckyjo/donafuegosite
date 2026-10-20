@@ -12,6 +12,19 @@
 <link rel="stylesheet" href="/assets/css/tokens.css?v=18">
 <link rel="stylesheet" href="/assets/css/site.css?v=18">
 <script>document.documentElement.classList.add('no-js');try{if(localStorage.getItem('df_age_ok')==='1')document.documentElement.classList.add('age-ok')}catch(e){}</script>
+<script>
+/* Google Analytics 4. The Measurement ID (G-...) lives here and nowhere else; the tag stays off until a real one replaces the placeholder, and on localhost. */
+(function (id) {
+  if (id === 'G-XXXXXXXXXX' || /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) return;
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { dataLayer.push(arguments); };
+  gtag('js', new Date());
+  gtag('config', id);
+  var s = document.createElement('script'); s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+  document.head.appendChild(s);
+})('G-XXXXXXXXXX');
+</script>
 <!-- /partial:head -->
 <title>Doña Fuego Spicy Margarita — Jalapeño tequila, lemon and lime</title>
 <meta name="description" content="The spicy margarita in a can. Real tequila steeped with jalapeño, real lemon and lime juice, 7%, 250ml. Heat that builds. At Checkers.">
@@ -198,7 +211,7 @@
     </div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=6" defer></script>
+<script src="/assets/js/main.js?v=7" defer></script>
 <!-- /partial:footer -->
 </body>
 </html>

@@ -12,6 +12,19 @@
 <link rel="stylesheet" href="/assets/css/tokens.css?v=18">
 <link rel="stylesheet" href="/assets/css/site.css?v=18">
 <script>document.documentElement.classList.add('no-js');try{if(localStorage.getItem('df_age_ok')==='1')document.documentElement.classList.add('age-ok')}catch(e){}</script>
+<script>
+/* Google Analytics 4. The Measurement ID (G-...) lives here and nowhere else; the tag stays off until a real one replaces the placeholder, and on localhost. */
+(function (id) {
+  if (id === 'G-XXXXXXXXXX' || /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) return;
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { dataLayer.push(arguments); };
+  gtag('js', new Date());
+  gtag('config', id);
+  var s = document.createElement('script'); s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+  document.head.appendChild(s);
+})('G-XXXXXXXXXX');
+</script>
 <!-- /partial:head -->
 <title>Privacy — Doña Fuego Tequila</title>
 <meta name="description" content="How donafuego.co.za handles your personal information under POPIA: what we collect when you sign up or write to us, why, and how to have it removed.">
@@ -64,7 +77,7 @@
   <div class="wrap">
     <span class="eyebrow">Legal</span>
     <h1 class="display">Privacy</h1>
-    <p class="lede">What we collect, why, and how to make us delete it. Last updated 14 October 2026.</p>
+    <p class="lede">What we collect, why, and how to make us delete it. Last updated 20 October 2026.</p>
   </div>
 </section>
 
@@ -81,12 +94,12 @@
         <li><strong>Email sign-up.</strong> Your email address, and your name if you give it. We use it to send you the emails you asked for: new cans, where we are pouring, the occasional giveaway. Lawful basis: your consent, which you can withdraw by unsubscribing.</li>
         <li><strong>Contact form.</strong> Your name, email address and message. We use it to reply. Lawful basis: it is necessary to answer you.</li>
         <li><strong>Age confirmation.</strong> Your answer to the age gate is stored in your own browser only. It never reaches us.</li>
-        <li><strong>Site usage.</strong> If we run analytics it will be a privacy-respecting service that does not use cookies or identify you. We will name it here when we do.</li>
+        <li><strong>Site usage.</strong> We use <strong>Google Analytics</strong> to count visits and see which pages and links get used. It records the pages you view, roughly where you are (city level, with your IP address truncated), your device and browser type, and where you came from. It does not get your name or email address, and we do not join it to the sign-up list. Lawful basis: our legitimate interest in knowing whether the site works.</li>
       </ul>
       <p>We do not collect anything else, and we do not buy, sell or swap lists.</p>
 
       <h2>Who else sees it</h2>
-      <p>Email addresses and messages are stored and sent with <strong>Resend</strong>, an email service provider, and the site is hosted by <strong>Vercel</strong>. Both may process data outside South Africa under their own safeguards. Nobody else gets your details unless the law requires it.</p>
+      <p>Email addresses and messages are stored and sent with <strong>Resend</strong>, an email service provider, the site is hosted by <strong>Vercel</strong>, and site usage is measured by <strong>Google Analytics</strong>. All three may process data outside South Africa under their own safeguards. Nobody else gets your details unless the law requires it.</p>
 
       <h2>How long we keep it</h2>
       <p>Sign-ups: until you unsubscribe, after which the address is removed from the list. Contact messages: for as long as it takes to deal with them and up to two years after, in case you write again.</p>
@@ -98,7 +111,7 @@
       <p>This site is for adults. We do not knowingly collect information from anyone under 18. If you think we have, tell us and we will delete it.</p>
 
       <h2>Cookies</h2>
-      <p>The site sets no tracking cookies. The age gate uses local storage in your browser so you are not asked every time.</p>
+      <p>Google Analytics sets cookies (named <code>_ga</code> and <code>_ga_</code> followed by an ID) that tell it whether you have been here before. They hold a random number, not your name. They expire after two years, and you can block or clear them in your browser; the site works the same without them. To opt out of Google Analytics everywhere, Google offers a <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">browser add-on</a>. The age gate uses local storage in your browser so you are not asked every time.</p>
 
       <h2>Changes</h2>
       <p>If this changes we will update the date at the top and, for anything material, tell subscribers by email.</p>
@@ -135,7 +148,7 @@
     </div>
   </div>
 </footer>
-<script src="/assets/js/main.js?v=6" defer></script>
+<script src="/assets/js/main.js?v=7" defer></script>
 <!-- /partial:footer -->
 </body>
 </html>

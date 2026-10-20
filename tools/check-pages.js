@@ -87,5 +87,8 @@ for (const file of all) {
   if (bangs) warn(f, `${bangs} exclamation mark(s) in copy; brand voice uses none`);
 }
 
+// Analytics: the tag stays off until the Measurement ID is pasted into the head partial
+if (/'G-XXXXXXXXXX'\)/.test(parts.head || '')) warn('site/_partials/head.html', 'Google Analytics Measurement ID is still the placeholder; the tag is off');
+
 console.log(`\n${all.length} pages checked, ${errors} error(s), ${warnings} warning(s)`);
 process.exit(errors ? 1 : 0);

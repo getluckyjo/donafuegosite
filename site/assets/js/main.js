@@ -81,7 +81,10 @@
       }).then(function (r) { return r.json().then(function (j) { return { ok: r.ok, body: j }; }); })
         .then(function (res) {
           if (msg) { msg.textContent = res.body.message || (res.ok ? 'Done.' : 'That did not go through.'); msg.classList.toggle('err', !res.ok); }
-          if (res.ok) form.reset();
+          if (res.ok) {
+            form.reset();
+            if (window.gtag) gtag('event', data.kind === 'contact' ? 'generate_lead' : 'sign_up', { method: 'site' });
+          }
         })
         .catch(function () { if (msg) { msg.textContent = 'That did not go through. Try again in a minute.'; msg.classList.add('err'); } })
         .then(function () { if (btn) btn.disabled = false; });
