@@ -26,9 +26,11 @@ beyond what Danielle has confirmed for the public.
   The check script fails if a page drifts.
 - **Tokens** in `site/assets/css/tokens.css` are the Brand Kit's `design-tokens.css` and
   match the other two repositories. Change the palette in all three.
-- **Analytics** is Google Analytics 4, loaded from `site/_partials/head.html`. The Measurement
-  ID lives there and nowhere else; the tag is off while it reads `G-XXXXXXXXXX` and on
-  localhost. Name any new tracking in `site/legal/privacy.html` the same day.
+- **Analytics** is Google Analytics 4 in consent mode with all storage denied, loaded from
+  `site/_partials/head.html`. It sets no cookies, so the site has no banner; keep it that
+  way. The Measurement ID lives there and nowhere else; the tag is off while it reads
+  `G-XXXXXXXXXX` and on localhost. Name any new tracking in `site/legal/privacy.html` the
+  same day.
 - **Bump `?v=`** in `site/_partials/head.html` (CSS) and `footer.html` (JS) on any CSS/JS
   change, then sync. Assets are cached for a year.
 - **Images**: shoot frames and approved fan photos, plus the label designer's can renders

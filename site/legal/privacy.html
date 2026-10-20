@@ -13,13 +13,14 @@
 <link rel="stylesheet" href="/assets/css/site.css?v=18">
 <script>document.documentElement.classList.add('no-js');try{if(localStorage.getItem('df_age_ok')==='1')document.documentElement.classList.add('age-ok')}catch(e){}</script>
 <script>
-/* Google Analytics 4. The Measurement ID (G-...) lives here and nowhere else; the tag stays off until a real one replaces the placeholder, and on localhost. */
+/* Google Analytics 4 in consent mode, cookieless: every storage type is denied and nothing asks to change that, so GA counts visits from anonymous pings and sets no cookies. The Measurement ID (G-...) lives here and nowhere else; the tag stays off until a real one replaces the placeholder, and on localhost. */
 (function (id) {
   if (id === 'G-XXXXXXXXXX' || /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) return;
   window.dataLayer = window.dataLayer || [];
   window.gtag = function () { dataLayer.push(arguments); };
+  gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
   gtag('js', new Date());
-  gtag('config', id);
+  gtag('config', id, { client_storage: 'none', allow_google_signals: false, allow_ad_personalization_signals: false });
   var s = document.createElement('script'); s.async = true;
   s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
   document.head.appendChild(s);
@@ -94,7 +95,7 @@
         <li><strong>Email sign-up.</strong> Your email address, and your name if you give it. We use it to send you the emails you asked for: new cans, where we are pouring, the occasional giveaway. Lawful basis: your consent, which you can withdraw by unsubscribing.</li>
         <li><strong>Contact form.</strong> Your name, email address and message. We use it to reply. Lawful basis: it is necessary to answer you.</li>
         <li><strong>Age confirmation.</strong> Your answer to the age gate is stored in your own browser only. It never reaches us.</li>
-        <li><strong>Site usage.</strong> We use <strong>Google Analytics</strong> to count visits and see which pages and links get used. It records the pages you view, roughly where you are (city level, with your IP address truncated), your device and browser type, and where you came from. It does not get your name or email address, and we do not join it to the sign-up list. Lawful basis: our legitimate interest in knowing whether the site works.</li>
+        <li><strong>Site usage.</strong> We use <strong>Google Analytics</strong> to count visits and see which pages and links get used. We run it in its cookieless mode: it sets nothing in your browser, cannot tell whether you have been here before, and gets anonymous pings about the page you view, roughly where you are (city level, with your IP address truncated), your device and browser type, and where you came from. It does not get your name or email address, and we do not join it to the sign-up list. Lawful basis: our legitimate interest in knowing whether the site works.</li>
       </ul>
       <p>We do not collect anything else, and we do not buy, sell or swap lists.</p>
 
@@ -111,7 +112,7 @@
       <p>This site is for adults. We do not knowingly collect information from anyone under 18. If you think we have, tell us and we will delete it.</p>
 
       <h2>Cookies</h2>
-      <p>Google Analytics sets cookies (named <code>_ga</code> and <code>_ga_</code> followed by an ID) that tell it whether you have been here before. They hold a random number, not your name. They expire after two years, and you can block or clear them in your browser; the site works the same without them. To opt out of Google Analytics everywhere, Google offers a <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">browser add-on</a>. The age gate uses local storage in your browser so you are not asked every time.</p>
+      <p>The site sets no tracking cookies. Google Analytics runs with all storage switched off, so it sets none either, which is why there is no cookie banner. The age gate uses local storage in your browser so you are not asked every time.</p>
 
       <h2>Changes</h2>
       <p>If this changes we will update the date at the top and, for anything material, tell subscribers by email.</p>
