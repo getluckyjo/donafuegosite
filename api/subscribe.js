@@ -32,7 +32,7 @@ module.exports = async (req, res) => {
   const message = String(b.message || '').trim().slice(0, 4000);
   if (kind === 'contact' && !message) return res.status(400).json({ ok: false, message: 'Tell us what it is about.' });
 
-  const key = process.env.RESEND_API_KEY;
+  const key = String(process.env.RESEND_API_KEY || '').trim().replace(/^["']+|["']+$/g, '');
   if (!key) {
     console.log('subscribe (stub mode):', JSON.stringify({ kind, email, name, page: b.page }));
     return res.status(200).json({ ok: true, stub: true, message: kind === 'contact' ? 'Got it. We will come back to you.' : 'You are on the list.' });
