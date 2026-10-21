@@ -188,7 +188,8 @@ Each has a placeholder in the build, so nothing blocks review of the draft.
 6. **Bottle specs.** ABV, size and tasting notes for Blanco, Jalapeño and Reposado (all
    three are R469). Fix the "reposade" product URL in Shopify and add a redirect.
 7. **Contact details.** Email is sales@dona.co.za on every contact card and behind the
-   form. Still wanted: phone and street address for the footer and the Organization schema.
+   form. The site gives Cape Town, South Africa and no street address. Still wanted: a
+   phone number, if one should be public.
 8. **Social.** Keep @drink_fuego_tequila or move to a Doña Fuego handle. TikTok yes or no.
 9. **Company and legal.** Registered entity and number for the footer; attorney review of
    `legal/terms` and `legal/privacy`; information officer's name; confirm the ARA
