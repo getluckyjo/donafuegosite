@@ -1,6 +1,6 @@
 # donafuego.co.za — plan, page map and what is still needed
 
-Last updated 19 October 2026. This is the working document for the consumer site.
+Last updated 21 October 2026. This is the working document for the consumer site.
 `CLAUDE.md` has the rules; this file has the state.
 
 ## Why
@@ -199,8 +199,12 @@ Each has a placeholder in the build, so nothing blocks review of the draft.
     with the Checkers buyer that brand use is fine under the trading terms. Check the links
     in `tools/shop.json` against the ones Danielle emailed, and add the Non-Alc once
     Checkers lists it.
-14. **Analytics.** Recommend Vercel Web Analytics or Plausible (no cookies, no banner).
-    Name it in the privacy page when added.
+14. **Analytics and Search Console.** The build carries Google Analytics 4 (no-cookie
+    mode), Vercel Web Analytics, the click events and the sitemap. Still to do in the
+    dashboards: create the GA4 property and paste its Measurement ID into
+    `site/_partials/head.html`, verify the domain in Search Console with a TXT record at
+    GoDaddy and submit the sitemap, switch Web Analytics on in the Vercel project.
+    `docs/ANALYTICS.md` has every step.
 15. **Final copy.** Drafts are in brand voice. Clarissa or Danielle sign off before launch.
 
 ## Later, once the above is in

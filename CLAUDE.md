@@ -44,11 +44,15 @@ beyond what Danielle has confirmed for the public.
   each. Keep new content inside that frame rather than adding brand-site sections.
 - **Cast names** stay off the page until that guest has said yes: the card keeps an empty,
   hidden `<p class="name" data-cast="<id>" hidden>`. Never guess a name.
+- **Analytics**: the GA4 Measurement ID and the cookie switch live in `site/_partials/head.html`;
+  events are sent through `track()` in `site/assets/js/main.js` and listed in `docs/ANALYTICS.md`.
+  Keep that list and the privacy page in step with what the code sends.
 - **Fan wall** shows only what Danielle has put in the Drive Fan Wall folder. Nothing is
   pulled from Instagram automatically, and nothing goes up without the fan's permission.
 
 ## Run and check
     node tools/dev-server.js        # http://localhost:4321
+    node tools/build-sitemap.js     # after adding or removing a page
     node tools/check-pages.js       # must pass before pushing
 
 ## Deploy

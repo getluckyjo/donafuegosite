@@ -1,6 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#F3ECDC">
+<meta name="robots" content="max-image-preview:large">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/Bevan-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -8,3 +9,16 @@
 <link rel="stylesheet" href="/assets/css/tokens.css?v=18">
 <link rel="stylesheet" href="/assets/css/site.css?v=18">
 <script>document.documentElement.classList.add('no-js');try{if(localStorage.getItem('df_age_ok')==='1')document.documentElement.classList.add('age-ok')}catch(e){}</script>
+<!-- Analytics. The first argument is the GA4 Measurement ID (G-…) from Analytics > Admin > Data streams;
+     empty keeps Google Analytics off. The second is whether GA may set cookies: false runs it under
+     Consent Mode with storage denied, so it counts without cookies. docs/ANALYTICS.md explains. -->
+<script>
+(function(id,cookies){window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments)}window.gtag=g;
+window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};
+if(!/^G-[A-Z0-9]{6,}$/.test(id))return;window.df_ga=id;var c=cookies?'granted':'denied';
+g('consent','default',{analytics_storage:c,ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});
+g('js',new Date());g('config',id);
+var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+id;document.head.appendChild(s);
+})('',false);
+</script>
+<script defer src="/_vercel/insights/script.js"></script>

@@ -21,7 +21,7 @@ const rel = (f) => path.relative(ROOT, f);
 function resolves(href) {
   const clean = href.split('#')[0].split('?')[0];
   if (!clean || clean === '/') return true;
-  if (clean.startsWith('/api/')) return true;
+  if (clean.startsWith('/api/') || clean.startsWith('/_vercel/')) return true;
   const p = path.join(ROOT, clean);
   return fs.existsSync(p) || fs.existsSync(p + '.html') || fs.existsSync(path.join(p, 'index.html'));
 }
@@ -86,6 +86,19 @@ for (const file of all) {
   const bangs = (text.match(/!/g) || []).length;
   if (bangs) warn(f, `${bangs} exclamation mark(s) in copy; brand voice uses none`);
 }
+
+// Sitemap lists exactly the indexable pages
+{
+  const { entries } = require('./build-sitemap.js');
+  const want = entries().map((e) => e.loc).sort();
+  const xml = fs.readFileSync(path.join(ROOT, 'sitemap.xml'), 'utf8');
+  const have = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]).sort();
+  for (const u of want) if (!have.includes(u)) err('site/sitemap.xml', `missing ${u} (run node tools/build-sitemap.js)`);
+  for (const u of have) if (!want.includes(u)) err('site/sitemap.xml', `lists ${u}, which is not an indexable page (run node tools/build-sitemap.js)`);
+}
+
+// Analytics: Google Analytics stays off until its Measurement ID is in _partials/head.html
+if (/\}\)\(''\s*,\s*(true|false)\);/.test(parts.head || '')) warn('site/_partials/head.html', 'Google Analytics is off: no Measurement ID set (docs/ANALYTICS.md)');
 
 console.log(`\n${all.length} pages checked, ${errors} error(s), ${warnings} warning(s)`);
 process.exit(errors ? 1 : 0);

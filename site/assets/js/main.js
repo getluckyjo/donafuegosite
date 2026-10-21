@@ -4,6 +4,42 @@
   var html = document.documentElement;
   html.classList.remove('no-js');
 
+  /* ---- Tracking: one call, sent to Google Analytics (if its ID is set in
+     _partials/head.html) and to Vercel Web Analytics. Names and parameters
+     are listed in docs/ANALYTICS.md. Nothing here identifies a person. ---- */
+  function track(name, params) {
+    params = params || {};
+    try { if (window.df_ga && window.gtag) window.gtag('event', name, params); } catch (e) {}
+    try { if (window.va) window.va('event', { name: name, data: params }); } catch (e) {}
+  }
+  function slugOf(href) {
+    var m = href.match(/\/cans\/([\w-]+)/) || location.pathname.match(/\/cans\/([\w-]+)/);
+    return m ? m[1] : '';
+  }
+  /* Outbound links: Checkers Sixty60 (which can, which pack), the Fuego Tequila
+     bottle shop, Instagram, anything else off-site. One listener, no per-link code. */
+  document.addEventListener('click', function (ev) {
+    var a = ev.target.closest && ev.target.closest('a[href]');
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    if (!/^https?:\/\//.test(href)) return;
+    var host = (a.hostname || '').replace(/^www\./, '');
+    if (host === location.hostname.replace(/^www\./, '')) return;
+    var p = { link_url: href.split('?')[0], link_text: (a.textContent || '').trim().slice(0, 60), page: location.pathname };
+    if (host === 'checkers.co.za') {
+      var buy = (a.getAttribute('data-buy') || '').split(':');
+      p.can = buy[0] || slugOf(href) || 'search';
+      p.pack = buy[1] || (a.hasAttribute('data-shop') ? 'search' : '');
+      track('sixty60_click', p);
+    } else if (host === 'fuegotequila.co.za') {
+      track('shop_click', p);
+    } else if (host === 'instagram.com') {
+      track('instagram_click', p);
+    } else {
+      track('outbound_click', p);
+    }
+  });
+
   /* ---- Age gate ---- */
   var KEY = 'df_age_ok';
   var gate = document.querySelector('.age-gate');
@@ -13,8 +49,8 @@
   if (gate) {
     var yes = gate.querySelector('[data-age="yes"]');
     var no = gate.querySelector('[data-age="no"]');
-    if (yes) yes.addEventListener('click', function () { remember(); html.classList.add('age-ok'); document.dispatchEvent(new Event('df:age-ok')); });
-    if (no) no.addEventListener('click', function () { window.location.href = 'https://aware.org.za/'; });
+    if (yes) yes.addEventListener('click', function () { remember(); html.classList.add('age-ok'); track('age_gate', { answer: 'yes' }); document.dispatchEvent(new Event('df:age-ok')); });
+    if (no) no.addEventListener('click', function () { track('age_gate', { answer: 'no' }); window.location.href = 'https://aware.org.za/'; });
     if (!html.classList.contains('age-ok') && yes) yes.focus();
   }
 
@@ -81,6 +117,7 @@
       }).then(function (r) { return r.json().then(function (j) { return { ok: r.ok, body: j }; }); })
         .then(function (res) {
           if (msg) { msg.textContent = res.body.message || (res.ok ? 'Done.' : 'That did not go through.'); msg.classList.toggle('err', !res.ok); }
+          track('form_submit', { kind: data.kind, ok: res.ok ? 'yes' : 'no', page: location.pathname });
           if (res.ok) form.reset();
         })
         .catch(function () { if (msg) { msg.textContent = 'That did not go through. Try again in a minute.'; msg.classList.add('err'); } })
@@ -121,9 +158,9 @@
       step();
     };
     var skip = open.querySelector('.skip-intro');
-    if (skip) skip.addEventListener('click', finish);
+    if (skip) skip.addEventListener('click', function () { track('intro_skip'); finish(); });
     document.querySelectorAll('[data-replay]').forEach(function (b) {
-      b.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); play(); });
+      b.addEventListener('click', function () { track('intro_replay'); window.scrollTo({ top: 0, behavior: 'smooth' }); play(); });
     });
     var seen = false;
     try { seen = sessionStorage.getItem(SEEN) === '1'; } catch (e) {}
@@ -137,6 +174,7 @@
   if (wall && window.fetch) {
     fetch('/api/fans').then(function (r) { return r.ok ? r.json() : { fans: [] }; }).then(function (d) {
       var invite = wall.querySelector('.print.empty');
+      if ((d.fans || []).length) track('fan_wall_view', { photos: d.fans.length });
       (d.fans || []).forEach(function (f, n) {
         var fig = document.createElement('figure');
         fig.className = 'print small';
