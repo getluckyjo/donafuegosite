@@ -47,7 +47,7 @@ module.exports = async (req, res) => {
     }
     await resend('/emails', {
       from: process.env.CONTACT_FROM || 'Doña Fuego site <site@donafuego.co.za>',
-      to: [process.env.CONTACT_TO || 'danielle@dona.co.za'],
+      to: [process.env.CONTACT_TO || 'sales@dona.co.za'],
       reply_to: email,
       subject: '[donafuego.co.za] ' + (b.topic || 'Contact') + ' from ' + (name || email),
       text: `From: ${name || '-'} <${email}>\nTopic: ${b.topic || '-'}\nPage: ${b.page || '-'}\n\n${message}`,

@@ -122,7 +122,7 @@ is in `tools/shoot-manifest.json`.
 | `/story` | redirect to `/#created-by` | done |
 | `/serves` | `site/serves.html` | drafted |
 | `/tequila` | `site/tequila.html` | drafted; bottle specs TBC, R469 each |
-| `/contact` | `site/contact.html` | drafted; addresses TBC |
+| `/contact` | `site/contact.html` | drafted; every card and the form go to sales@dona.co.za |
 | `/legal/terms` `/legal/privacy` | `site/legal/*.html` | drafted for attorney review |
 | `/404` | `site/404.html` | done |
 | `/shop` | redirect in `vercel.json` to the Shopify collection | done |
@@ -187,8 +187,8 @@ Each has a placeholder in the build, so nothing blocks review of the draft.
    ABV and on-pack class; launch wording. Every one is marked `tbc` in the pages.
 6. **Bottle specs.** ABV, size and tasting notes for Blanco, Jalapeño and Reposado (all
    three are R469). Fix the "reposade" product URL in Shopify and add a redirect.
-7. **Contact details.** hello@ and press@ on donafuego.co.za (or whichever addresses are
-   real), phone, street address for the footer and the Organization schema.
+7. **Contact details.** Email is sales@dona.co.za on every contact card and behind the
+   form. Still wanted: phone and street address for the footer and the Organization schema.
 8. **Social.** Keep @drink_fuego_tequila or move to a Doña Fuego handle. TikTok yes or no.
 9. **Company and legal.** Registered entity and number for the footer; attorney review of
    `legal/terms` and `legal/privacy`; information officer's name; confirm the ARA
