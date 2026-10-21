@@ -58,8 +58,8 @@ async function getAccessToken() {
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: new URLSearchParams({ grant_type: 'urn:ietf:params:oauth:grant-type:jwt-bearer', assertion: header + '.' + claims + '.' + signature }),
   });
-  if (!res.ok) throw new Error('Google token exchange failed (' + res.status + ')');
-  const json = await res.json();
+  const json = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error('Google token exchange failed (' + res.status + '): ' + (json.error_description || json.error || ''));
   cachedToken = { token: json.access_token, expiresAt: now + (json.expires_in || 3600) };
   return cachedToken.token;
 }
