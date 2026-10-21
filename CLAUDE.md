@@ -56,10 +56,13 @@ beyond what Danielle has confirmed for the public.
     node tools/check-pages.js       # must pass before pushing
 
 ## Deploy
-Fast-forward `main`. Vercel project to be created from this repo; domain donafuego.co.za.
+Fast-forward `main`; the `donafuegosite` Vercel project builds it and serves donafuego.co.za.
 Env for the forms: `RESEND_API_KEY`, `RESEND_AUDIENCE_ID`, `CONTACT_TO`, `CONTACT_FROM`.
-Without them the forms answer politely and log to the function output.
-Env for the fan wall: `GOOGLE_SA_EMAIL`, `GOOGLE_SA_PRIVATE_KEY`, `FAN_FOLDER_ID`. Without
+The first two are set on Production; the sending domain donafuego.co.za is verified in
+Resend. Without the key the forms answer politely and log to the function output, which is
+what previews do.
+Env for the fan wall: `GOOGLE_SA_EMAIL`, `GOOGLE_SA_PRIVATE_KEY`, `FAN_FOLDER_ID`, all set.
+`docs/SITE.md` says what each points at. Without
 them the wall shows its five invite cards ("This could be you", your friend, your crush,
 your mom, your dog); each real fan photo replaces one, and "This could be you" stays. `FANS=demo node tools/dev-server.js`
 fills it with stand-in frames locally.

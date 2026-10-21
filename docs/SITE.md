@@ -64,16 +64,20 @@ cream lettering. Green headings carry no red.
 3. Before saving, check it against `07-compliance.md`: everyone clearly over 18 and
    reading 25+ if there's a can, nobody looks drunk, no cars or driving, no other alcohol
    brands, no phone in their hand if it can be avoided.
-4. Save the photo into the **Fan Wall** folder on Drive. Put their @handle in the file's
-   description (right-click, File information, Description), or name the file
-   `@handle.jpg`.
+4. Save the photo into the **Doña Fuego Fan Wall** folder on Drive (shared with
+   danielle@ and sales@ as editors). Put their @handle in the file's description
+   (right-click, File information, Description), or name the file `@handle.jpg`.
 5. It shows on the site within ten minutes, newest first. To take one down, delete it from
    the folder. It drops off the wall within ten minutes.
 
-Setup, once: create a Google Cloud service account with no roles, make a key, share the
-Fan Wall folder with its email as Viewer, and set `GOOGLE_SA_EMAIL`, `GOOGLE_SA_PRIVATE_KEY`
-and `FAN_FOLDER_ID` on Vercel. The dashboard's `docs/DASHBOARD.md` has the same
-walkthrough for its own service account.
+How it is wired: the folder lives in johannes@getluckygolfclub.com's Drive. The Google
+Cloud project `donafuego-site` holds a service account, `fan-wall@donafuego-site.iam.gserviceaccount.com`,
+with no roles and Viewer access on the folder. Its email, its key and the folder ID sit on
+the Vercel project as `GOOGLE_SA_EMAIL`, `GOOGLE_SA_PRIVATE_KEY` and `FAN_FOLDER_ID`. The
+key may be pasted in any shape (PEM, quoted, bare base64, or the whole JSON file);
+`api/_lib/google.js` sorts it out. If the wall goes blank, `/api/fans` returning
+`"error":true` points at the function log, which carries Google's reason. To rotate the
+key, make a new one on the service account, replace the Vercel value and redeploy.
 
 ## Cast consent
 
@@ -122,8 +126,8 @@ is in `tools/shoot-manifest.json`.
 | `/legal/terms` `/legal/privacy` | `site/legal/*.html` | drafted for attorney review |
 | `/404` | `site/404.html` | done |
 | `/shop` | redirect in `vercel.json` to the Shopify collection | done |
-| `/api/subscribe` | `api/subscribe.js` | works in stub mode; needs Resend env |
-| `/api/fans`, `/api/fan-image` | `api/fans.js`, `api/fan-image.js` | empty until the fan-wall env is set |
+| `/api/subscribe` | `api/subscribe.js` | live through Resend: sign-ups go to the "Doña Fuego" segment, contact messages send from the verified donafuego.co.za domain |
+| `/api/fans`, `/api/fan-image` | `api/fans.js`, `api/fan-image.js` | live from the Doña Fuego Fan Wall folder on Drive |
 
 ## Sixty60 links
 
@@ -176,36 +180,32 @@ Each has a placeholder in the build, so nothing blocks review of the draft.
    resolution (1024 × 1536) with a garbled glyph after "made"; ask the designer for the
    full-size file.
 3. **Cast names and consent.** See the table above.
-4. **Fan wall setup.** Service account, Fan Wall folder, three env vars. See above.
-5. **Held-back frames.** Eight frames are out pending an age or background check; the list
+4. **Held-back frames.** Eight frames are out pending an age or background check; the list
    is in `tools/shoot-manifest.json`. Clear them with Danielle to use them.
-6. **Facts to confirm with Danielle.** Store count for public use; Sixty60 prices in `tools/shop.json`;
+5. **Facts to confirm with Danielle.** Store count for public use; Sixty60 prices in `tools/shop.json`;
    can size (Brand Kit 250ml, Shopify listing says 300ml); Non-Alc
    ABV and on-pack class; launch wording. Every one is marked `tbc` in the pages.
-7. **Bottle specs.** ABV, size and tasting notes for Blanco, Jalapeño and Reposado (all
+6. **Bottle specs.** ABV, size and tasting notes for Blanco, Jalapeño and Reposado (all
    three are R469). Fix the "reposade" product URL in Shopify and add a redirect.
-8. **Contact details.** hello@ and press@ on donafuego.co.za (or whichever addresses are
+7. **Contact details.** hello@ and press@ on donafuego.co.za (or whichever addresses are
    real), phone, street address for the footer and the Organization schema.
-9. **Social.** Keep @drink_fuego_tequila or move to a Doña Fuego handle. TikTok yes or no.
-10. **Company and legal.** Registered entity and number for the footer; attorney review of
+8. **Social.** Keep @drink_fuego_tequila or move to a Doña Fuego handle. TikTok yes or no.
+9. **Company and legal.** Registered entity and number for the footer; attorney review of
    `legal/terms` and `legal/privacy`; information officer's name; confirm the ARA
    responsible-drinking wording.
-11. **Domain and hosting.** Register donafuego.co.za, create the Vercel project from this
-    repo, set DNS. Plan the fuegotequila.co.za redirect and the shop subdomain.
-12. **Email.** Resend API key, an audience ID and a verified sending domain. Then the
-    welcome email.
-13. **Checkers and Sixty60 marks.** The LiquorShop and Sixty60 logos are on the
+10. **Redirects.** Plan the fuegotequila.co.za redirect and the shop subdomain. The site
+    itself serves from the `donafuegosite` Vercel project on donafuego.co.za.
+11. **Checkers and Sixty60 marks.** The LiquorShop and Sixty60 logos are on the
     "Available nationwide" band (`site/_partials/retail.html`: home and `/cans`). Confirm
     with the Checkers buyer that brand use is fine under the trading terms. Check the links
     in `tools/shop.json` against the ones Danielle emailed, and add the Non-Alc once
     Checkers lists it.
-14. **Analytics and Search Console.** The build carries Google Analytics 4 (no-cookie
-    mode), Vercel Web Analytics, the click events and the sitemap. Still to do in the
-    dashboards: create the GA4 property and paste its Measurement ID into
-    `site/_partials/head.html`, verify the domain in Search Console with a TXT record at
-    GoDaddy and submit the sitemap, switch Web Analytics on in the Vercel project.
+12. **Search Console and Web Analytics.** The build carries Google Analytics 4 (no-cookie
+    mode) with its Measurement ID set, Vercel Web Analytics, the click events and the
+    sitemap. Still to do in the dashboards: verify the domain in Search Console with a TXT
+    record at GoDaddy and submit the sitemap, switch Web Analytics on in the Vercel project.
     `docs/ANALYTICS.md` has every step.
-15. **Final copy.** Drafts are in brand voice. Clarissa or Danielle sign off before launch.
+13. **Final copy.** Drafts are in brand voice. Clarissa or Danielle sign off before launch.
 
 ## Later, once the above is in
 
