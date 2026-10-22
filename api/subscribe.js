@@ -54,7 +54,8 @@ module.exports = async (req, res) => {
     });
     return res.status(200).json({ ok: true, message: 'Got it. We will come back to you.' });
   } catch (e) {
-    console.error('subscribe error', e.message);
+    /* Key shape only, never the key: enough to tell a bad paste from a dead key. */
+    console.error('subscribe error', e.message, '| key length', key.length, '| starts re_', key.startsWith('re_'), '| whitespace inside', /\s/.test(key));
     return res.status(502).json({ ok: false, message: 'That did not go through. Email us instead.' });
   }
 };
