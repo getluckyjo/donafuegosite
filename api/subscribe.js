@@ -42,7 +42,7 @@ module.exports = async (req, res) => {
     if (kind === 'subscribe') {
       const audience = process.env.RESEND_AUDIENCE_ID;
       if (!audience) throw new Error('RESEND_AUDIENCE_ID not set');
-      await resend('/audiences/' + audience + '/contacts', { email, first_name: name || undefined, unsubscribed: false });
+      await resend('/audiences/' + audience + '/contacts', { email, first_name: name || undefined, unsubscribed: false }, key);
       return res.status(200).json({ ok: true, message: 'You are on the list.' });
     }
     await resend('/emails', {
@@ -51,11 +51,10 @@ module.exports = async (req, res) => {
       reply_to: email,
       subject: '[donafuego.co.za] ' + (b.topic || 'Contact') + ' from ' + (name || email),
       text: `From: ${name || '-'} <${email}>\nTopic: ${b.topic || '-'}\nPage: ${b.page || '-'}\n\n${message}`,
-    });
+    }, key);
     return res.status(200).json({ ok: true, message: 'Got it. We will come back to you.' });
   } catch (e) {
-    /* Key shape only, never the key: enough to tell a bad paste from a dead key. */
-    console.error('subscribe error', e.message, '| key length', key.length, '| starts re_', key.startsWith('re_'), '| whitespace inside', /\s/.test(key));
+    console.error('subscribe error', e.message);
     return res.status(502).json({ ok: false, message: 'That did not go through. Email us instead.' });
   }
 };
